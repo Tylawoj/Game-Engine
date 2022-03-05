@@ -1,0 +1,139 @@
+\hypertarget{classvita_1_1Camera}{}\doxysection{vita\+::Camera Class Reference}
+\label{classvita_1_1Camera}\index{vita::Camera@{vita::Camera}}
+Inheritance diagram for vita\+::Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Camera_a9bd212f1e1f6e5e96125537b6dc20516}{Camera}} (float \+\_\+fov, glm\+::vec3 \+\_\+target)
+\begin{DoxyCompactList}\small\item\em Sets the starting F\+OV and target direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Camera_a5ae3fa8895f350d108d82f805f658e30}{Set\+Target\+Direction}} (glm\+::vec3 \+\_\+target)
+\begin{DoxyCompactList}\small\item\em Sets a direction for the camera to look at. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Camera_acb0cc5c4922d2b4c4663aa3e57c48de0}{Get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Camera_a6b0379730cd1a0ebe399b58ddc1b1a1e}{On\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the projection matrix of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Camera_ae8c8f2edec30ab69ad63fe6eda1082eb}{Rotate\+Target\+Direction}} (glm\+::vec3 \+\_\+rotation)
+\begin{DoxyCompactList}\small\item\em Rotates the target direction vector. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classvita_1_1Camera_a3c8ccb2913470d0030b11638f2d3fd30}{Get\+Projection\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Returns the projection matrix. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classvita_1_1Camera_a829d2971bcb444aa0b96ff2694069506}{Get\+View\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Constructs and returns a view matrix using the target direction and camera\textquotesingle{}s position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Camera_a9bd212f1e1f6e5e96125537b6dc20516}\label{classvita_1_1Camera_a9bd212f1e1f6e5e96125537b6dc20516}} 
+\index{vita::Camera@{vita::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily vita\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{\+\_\+fov,  }\item[{glm\+::vec3}]{\+\_\+target }\end{DoxyParamCaption})}
+
+
+
+Sets the starting F\+OV and target direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fov} & The field of view. \\
+\hline
+{\em \+\_\+target} & Target direction. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Camera_acb0cc5c4922d2b4c4663aa3e57c48de0}\label{classvita_1_1Camera_acb0cc5c4922d2b4c4663aa3e57c48de0}} 
+\index{vita::Camera@{vita::Camera}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Camera\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the position of the camera. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns the position of the \mbox{\hyperlink{classvita_1_1Camera}{Camera}} using the \mbox{\hyperlink{classvita_1_1Transform}{Transform}} of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} storing the camera.\mbox{\Hypertarget{classvita_1_1Camera_a3c8ccb2913470d0030b11638f2d3fd30}\label{classvita_1_1Camera_a3c8ccb2913470d0030b11638f2d3fd30}} 
+\index{vita::Camera@{vita::Camera}!GetProjectionMatrix@{GetProjectionMatrix}}
+\index{GetProjectionMatrix@{GetProjectionMatrix}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{GetProjectionMatrix()}{GetProjectionMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 vita\+::\+Camera\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the projection matrix. 
+
+\begin{DoxyReturn}{Returns}
+A projection matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Camera_a829d2971bcb444aa0b96ff2694069506}\label{classvita_1_1Camera_a829d2971bcb444aa0b96ff2694069506}} 
+\index{vita::Camera@{vita::Camera}!GetViewMatrix@{GetViewMatrix}}
+\index{GetViewMatrix@{GetViewMatrix}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{GetViewMatrix()}{GetViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 vita\+::\+Camera\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs and returns a view matrix using the target direction and camera\textquotesingle{}s position. 
+
+\begin{DoxyReturn}{Returns}
+A view matrix. 
+\end{DoxyReturn}
+Creates and returns a view matrix using the camera\textquotesingle{}s position and set target direciton.\mbox{\Hypertarget{classvita_1_1Camera_a6b0379730cd1a0ebe399b58ddc1b1a1e}\label{classvita_1_1Camera_a6b0379730cd1a0ebe399b58ddc1b1a1e}} 
+\index{vita::Camera@{vita::Camera}!OnInit@{OnInit}}
+\index{OnInit@{OnInit}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{OnInit()}{OnInit()}}
+{\footnotesize\ttfamily void vita\+::\+Camera\+::\+On\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes the projection matrix of the camera. 
+
+Create a projection matrix using the pre-\/set field of view and screen\textquotesingle{}s dimensions.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Component_a1a33afc68f0cd9e3935473ef6a8ac6f5}{vita\+::\+Component}}.
+
+\mbox{\Hypertarget{classvita_1_1Camera_ae8c8f2edec30ab69ad63fe6eda1082eb}\label{classvita_1_1Camera_ae8c8f2edec30ab69ad63fe6eda1082eb}} 
+\index{vita::Camera@{vita::Camera}!RotateTargetDirection@{RotateTargetDirection}}
+\index{RotateTargetDirection@{RotateTargetDirection}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{RotateTargetDirection()}{RotateTargetDirection()}}
+{\footnotesize\ttfamily void vita\+::\+Camera\+::\+Rotate\+Target\+Direction (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rotation }\end{DoxyParamCaption})}
+
+
+
+Rotates the target direction vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotation} & Axis-\/angled rotation. \\
+\hline
+\end{DoxyParams}
+Rotate the camera around the origin (useful for e.\+g. explosions).
+
+Extract the position from the transformation matrix.\mbox{\Hypertarget{classvita_1_1Camera_a5ae3fa8895f350d108d82f805f658e30}\label{classvita_1_1Camera_a5ae3fa8895f350d108d82f805f658e30}} 
+\index{vita::Camera@{vita::Camera}!SetTargetDirection@{SetTargetDirection}}
+\index{SetTargetDirection@{SetTargetDirection}!vita::Camera@{vita::Camera}}
+\doxysubsubsection{\texorpdfstring{SetTargetDirection()}{SetTargetDirection()}}
+{\footnotesize\ttfamily void vita\+::\+Camera\+::\+Set\+Target\+Direction (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+target }\end{DoxyParamCaption})}
+
+
+
+Sets a direction for the camera to look at. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+target} & The direction vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Camera_8h}{Camera.\+h}}\item 
+src/engine/\mbox{\hyperlink{Camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

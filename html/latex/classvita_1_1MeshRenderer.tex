@@ -1,0 +1,112 @@
+\hypertarget{classvita_1_1MeshRenderer}{}\doxysection{vita\+::Mesh\+Renderer Class Reference}
+\label{classvita_1_1MeshRenderer}\index{vita::MeshRenderer@{vita::MeshRenderer}}
+Inheritance diagram for vita\+::Mesh\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1MeshRenderer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1MeshRenderer_abc475a206fbe96265da28ce4582e41ed}{Mesh\+Renderer}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} $>$ \+\_\+mesh, std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$ \+\_\+material)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} with the already constructed \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} and \mbox{\hyperlink{classvita_1_1Material}{Material}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1MeshRenderer_a5867c69da41bab19954b690721e77817}{On\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Renders the stored \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} using its \mbox{\hyperlink{classvita_1_1Material}{Material}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1MeshRenderer_a3fdfa4324e9f9e9e8235d6b781ff8c02}{Set\+Mesh}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} $>$ \+\_\+mesh)
+\begin{DoxyCompactList}\small\item\em Sets a new \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} for the \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} to use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1MeshRenderer_a60ee9dc70c135352fb6c85e04b8c0c31}{Set\+Material}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$ \+\_\+material)
+\begin{DoxyCompactList}\small\item\em Sets a new \mbox{\hyperlink{classvita_1_1Material}{Material}} for the \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1MeshRenderer_abc475a206fbe96265da28ce4582e41ed}\label{classvita_1_1MeshRenderer_abc475a206fbe96265da28ce4582e41ed}} 
+\index{vita::MeshRenderer@{vita::MeshRenderer}!MeshRenderer@{MeshRenderer}}
+\index{MeshRenderer@{MeshRenderer}!vita::MeshRenderer@{vita::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{MeshRenderer()}{MeshRenderer()}}
+{\footnotesize\ttfamily vita\+::\+Mesh\+Renderer\+::\+Mesh\+Renderer (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} $>$}]{\+\_\+mesh,  }\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$}]{\+\_\+material }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} with the already constructed \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} and \mbox{\hyperlink{classvita_1_1Material}{Material}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+shader} & A loaded \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} object. \\
+\hline
+{\em \+\_\+texture} & A loaded \mbox{\hyperlink{classvita_1_1Material}{Material}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1MeshRenderer_a5867c69da41bab19954b690721e77817}\label{classvita_1_1MeshRenderer_a5867c69da41bab19954b690721e77817}} 
+\index{vita::MeshRenderer@{vita::MeshRenderer}!OnDisplay@{OnDisplay}}
+\index{OnDisplay@{OnDisplay}!vita::MeshRenderer@{vita::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{OnDisplay()}{OnDisplay()}}
+{\footnotesize\ttfamily void vita\+::\+Mesh\+Renderer\+::\+On\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders the stored \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} using its \mbox{\hyperlink{classvita_1_1Material}{Material}}. 
+
+Ensure that the \mbox{\hyperlink{classvita_1_1Material}{Material}} and \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} exist with its class members.
+
+Ensure that this \mbox{\hyperlink{classvita_1_1Entity}{Entity}} has a \mbox{\hyperlink{classvita_1_1Transform}{Transform}} to get a transformation matrix from.
+
+Get the \mbox{\hyperlink{classvita_1_1Transform}{Transform}} of this entity.
+
+Get the currently set camera.
+
+Ensure that \mbox{\hyperlink{classvita_1_1Core}{Core}} has a camera set.
+
+Get the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from \mbox{\hyperlink{classvita_1_1Material}{Material}}.
+
+Set the shader to use the model (transformation), view and projection matrix.
+
+Get the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} from \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}}.
+
+Set the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} to use rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} stored in \mbox{\hyperlink{classvita_1_1Material}{Material}}.
+
+Set the shader to use the mesh with the texture.
+
+Render the mesh.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Component_a6de918ae876e130206c683866a45914c}{vita\+::\+Component}}.
+
+\mbox{\Hypertarget{classvita_1_1MeshRenderer_a60ee9dc70c135352fb6c85e04b8c0c31}\label{classvita_1_1MeshRenderer_a60ee9dc70c135352fb6c85e04b8c0c31}} 
+\index{vita::MeshRenderer@{vita::MeshRenderer}!SetMaterial@{SetMaterial}}
+\index{SetMaterial@{SetMaterial}!vita::MeshRenderer@{vita::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{SetMaterial()}{SetMaterial()}}
+{\footnotesize\ttfamily void vita\+::\+Mesh\+Renderer\+::\+Set\+Material (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$}]{\+\_\+material }\end{DoxyParamCaption})}
+
+
+
+Sets a new \mbox{\hyperlink{classvita_1_1Material}{Material}} for the \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+material} & A \mbox{\hyperlink{classvita_1_1Material}{Material}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1MeshRenderer_a3fdfa4324e9f9e9e8235d6b781ff8c02}\label{classvita_1_1MeshRenderer_a3fdfa4324e9f9e9e8235d6b781ff8c02}} 
+\index{vita::MeshRenderer@{vita::MeshRenderer}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!vita::MeshRenderer@{vita::MeshRenderer}}
+\doxysubsubsection{\texorpdfstring{SetMesh()}{SetMesh()}}
+{\footnotesize\ttfamily void vita\+::\+Mesh\+Renderer\+::\+Set\+Mesh (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} $>$}]{\+\_\+mesh }\end{DoxyParamCaption})}
+
+
+
+Sets a new \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} for the \mbox{\hyperlink{classvita_1_1MeshRenderer}{Mesh\+Renderer}} to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+mesh} & A \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{MeshRenderer_8h}{Mesh\+Renderer.\+h}}\item 
+src/engine/\mbox{\hyperlink{MeshRenderer_8cpp}{Mesh\+Renderer.\+cpp}}\end{DoxyCompactItemize}

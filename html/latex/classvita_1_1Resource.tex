@@ -1,0 +1,88 @@
+\hypertarget{classvita_1_1Resource}{}\doxysection{vita\+::Resource Class Reference}
+\label{classvita_1_1Resource}\index{vita::Resource@{vita::Resource}}
+Inheritance diagram for vita\+::Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Resource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Context $>$ \mbox{\hyperlink{classvita_1_1Resource_a3ae0570bd5d127047108b4aac18f05a1}{Get\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend Context, used for rendering. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ \mbox{\hyperlink{classvita_1_1Resource_a4c1ee28f004ac2a84f57739215622762}{Get\+Core}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1Core}{Core}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Resource_aa1e20dfd1f1c2f794bfab333b237ccb6}{Is\+Alive}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the resource is alive or not (still used in the scene). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Resource_af128a1c249457b1b06fee8f6989ce141}\label{classvita_1_1Resource_af128a1c249457b1b06fee8f6989ce141}} 
+void \mbox{\hyperlink{classvita_1_1Resource_af128a1c249457b1b06fee8f6989ce141}{Kill}} ()
+\begin{DoxyCompactList}\small\item\em Kills the component, removing it from the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}\label{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}} 
+virtual void \mbox{\hyperlink{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}{On\+Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Allows resources to load a required file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Resource_ae376ca02c0b700e74be0d76f50521790}\label{classvita_1_1Resource_ae376ca02c0b700e74be0d76f50521790}} 
+virtual void \mbox{\hyperlink{classvita_1_1Resource_ae376ca02c0b700e74be0d76f50521790}{On\+Load}} (std\+::sr1\+::vector$<$ std\+::string $>$ \+\_\+paths)
+\begin{DoxyCompactList}\small\item\em Allows resources to required files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvita_1_1Resource_a0db89df163eb9c91221010746d51158a}{vita\+::\+Resources}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Resource_a3ae0570bd5d127047108b4aac18f05a1}\label{classvita_1_1Resource_a3ae0570bd5d127047108b4aac18f05a1}} 
+\index{vita::Resource@{vita::Resource}!GetContext@{GetContext}}
+\index{GetContext@{GetContext}!vita::Resource@{vita::Resource}}
+\doxysubsubsection{\texorpdfstring{GetContext()}{GetContext()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Context $>$ vita\+::\+Resource\+::\+Get\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend Context, used for rendering. 
+
+\begin{DoxyReturn}{Returns}
+rend\textquotesingle{}s Context stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+Shortcut function to \mbox{\hyperlink{classvita_1_1Core}{Core}}.\mbox{\Hypertarget{classvita_1_1Resource_a4c1ee28f004ac2a84f57739215622762}\label{classvita_1_1Resource_a4c1ee28f004ac2a84f57739215622762}} 
+\index{vita::Resource@{vita::Resource}!GetCore@{GetCore}}
+\index{GetCore@{GetCore}!vita::Resource@{vita::Resource}}
+\doxysubsubsection{\texorpdfstring{GetCore()}{GetCore()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ vita\+::\+Resource\+::\+Get\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1Core}{Core}} object. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Core}{Core}} of the engine. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Resource_aa1e20dfd1f1c2f794bfab333b237ccb6}\label{classvita_1_1Resource_aa1e20dfd1f1c2f794bfab333b237ccb6}} 
+\index{vita::Resource@{vita::Resource}!IsAlive@{IsAlive}}
+\index{IsAlive@{IsAlive}!vita::Resource@{vita::Resource}}
+\doxysubsubsection{\texorpdfstring{IsAlive()}{IsAlive()}}
+{\footnotesize\ttfamily bool vita\+::\+Resource\+::\+Is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether the resource is alive or not (still used in the scene). 
+
+\begin{DoxyReturn}{Returns}
+Returns if the resource is alive or not. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Resource_a0db89df163eb9c91221010746d51158a}\label{classvita_1_1Resource_a0db89df163eb9c91221010746d51158a}} 
+\index{vita::Resource@{vita::Resource}!vita::Resources@{vita::Resources}}
+\index{vita::Resources@{vita::Resources}!vita::Resource@{vita::Resource}}
+\doxysubsubsection{\texorpdfstring{vita::Resources}{vita::Resources}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classvita_1_1Resources}{vita\+::\+Resources}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\hyperlink{classvita_1_1Resources}{Resources}} is set as a friend class to set a weak\+\_\+ptr to \mbox{\hyperlink{classvita_1_1Core}{Core}} during the construction of a \mbox{\hyperlink{classvita_1_1Resource}{Resource}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Resource_8h}{Resource.\+h}}\item 
+src/engine/\mbox{\hyperlink{Resource_8cpp}{Resource.\+cpp}}\end{DoxyCompactItemize}

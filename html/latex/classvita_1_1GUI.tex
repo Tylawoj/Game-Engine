@@ -1,0 +1,136 @@
+\hypertarget{classvita_1_1GUI}{}\doxysection{vita\+::G\+UI Class Reference}
+\label{classvita_1_1GUI}\index{vita::GUI@{vita::GUI}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvita_1_1GUI_a0d33e05861b0fdf3691c6024a92fa5c3}{Draw\+G\+U\+I\+Texture}} (glm\+::vec2 \+\_\+position, glm\+::vec2 \+\_\+size, std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$ \+\_\+material)
+\begin{DoxyCompactList}\small\item\em Draws a 2D image on screen with a specified size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1GUI_a50f581227699264aa36a596deb6d3003}{Draw\+G\+U\+I\+Texture}} (glm\+::vec2 \+\_\+position, std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$ \+\_\+material)
+\begin{DoxyCompactList}\small\item\em Draws a 2D image on screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1GUI_a306f4908de5453136ca859f70db2835a}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvita_1_1GUI_aeade582d41a4d7368632444ca2822b05}{vita\+::\+Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1GUI_a0d33e05861b0fdf3691c6024a92fa5c3}\label{classvita_1_1GUI_a0d33e05861b0fdf3691c6024a92fa5c3}} 
+\index{vita::GUI@{vita::GUI}!DrawGUITexture@{DrawGUITexture}}
+\index{DrawGUITexture@{DrawGUITexture}!vita::GUI@{vita::GUI}}
+\doxysubsubsection{\texorpdfstring{DrawGUITexture()}{DrawGUITexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void vita\+::\+G\+U\+I\+::\+Draw\+G\+U\+I\+Texture (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{\+\_\+position,  }\item[{glm\+::vec2}]{\+\_\+size,  }\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$}]{\+\_\+material }\end{DoxyParamCaption})}
+
+
+
+Draws a 2D image on screen with a specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & The position of the 2D image. \\
+\hline
+{\em \+\_\+size} & The size of the 2D image. \\
+\hline
+{\em \+\_\+material} & The material used by the 2D image (shader and texture). \\
+\hline
+\end{DoxyParams}
+Ensure that the \mbox{\hyperlink{classvita_1_1Material}{Material}} with its class members exists.
+
+Create an Open\+GL buffer for the positions and texture coordinates.
+
+Add the positions to the buffer.
+
+Add the texture coordinates to the buffer.
+
+Create an empty mesh to render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}.
+
+Set the positions and texture coordinates in the buffer.
+
+Translate the model for rendering, using the positions.
+
+Scale the model.
+
+Set the shader to use the model and projection matrix. Unfortunately, using set\+Uniform(\char`\"{}u\+\_\+\+Model\char`\"{}, model) gives a segmentation fault. Further debugging required.
+
+Set the 2D texture in the mesh.
+
+Set the mesh to render.
+
+Disable the depth testing to render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} correctly.
+
+Render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}.
+
+Enable depth testing again for other meshes.\mbox{\Hypertarget{classvita_1_1GUI_a50f581227699264aa36a596deb6d3003}\label{classvita_1_1GUI_a50f581227699264aa36a596deb6d3003}} 
+\index{vita::GUI@{vita::GUI}!DrawGUITexture@{DrawGUITexture}}
+\index{DrawGUITexture@{DrawGUITexture}!vita::GUI@{vita::GUI}}
+\doxysubsubsection{\texorpdfstring{DrawGUITexture()}{DrawGUITexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void vita\+::\+G\+U\+I\+::\+Draw\+G\+U\+I\+Texture (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{\+\_\+position,  }\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Material}{Material}} $>$}]{\+\_\+material }\end{DoxyParamCaption})}
+
+
+
+Draws a 2D image on screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & The position of the 2D image. \\
+\hline
+{\em \+\_\+material} & The material used by the 2D image (shader and texture). \\
+\hline
+\end{DoxyParams}
+Ensure that the \mbox{\hyperlink{classvita_1_1Material}{Material}} with its class members exists.
+
+Create an Open\+GL buffer for the positions and texture coordinates.
+
+Add the positions to the buffer.
+
+Add the texture coordinates to the buffer.
+
+Create an arbitrary mesh to render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}.
+
+Set the positions and texture coordinates in the buffer.
+
+Translate the model for rendering, using the positions.
+
+Let the model use the size of the texture.
+
+Set the shader to use the model and projection matrix. Unfortunately, using set\+Uniform(\char`\"{}u\+\_\+\+Model\char`\"{}, model) gives a segmentation fault. Further debugging required.
+
+Set the 2D texture in the mesh.
+
+Set the mesh to render.
+
+Disable the depth testing to render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} correctly.
+
+Render the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}.
+
+Enable depth testing again for other meshes.\mbox{\Hypertarget{classvita_1_1GUI_a306f4908de5453136ca859f70db2835a}\label{classvita_1_1GUI_a306f4908de5453136ca859f70db2835a}} 
+\index{vita::GUI@{vita::GUI}!Init@{Init}}
+\index{Init@{Init}!vita::GUI@{vita::GUI}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void vita\+::\+G\+U\+I\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the member variables. 
+
+Creates an orthographic projection matrix using the screen\textquotesingle{}s dimensions.
+
+Sets the 2D rendering positions.
+
+Sets the 2D rendering texture coordinates.
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvita_1_1GUI_aeade582d41a4d7368632444ca2822b05}\label{classvita_1_1GUI_aeade582d41a4d7368632444ca2822b05}} 
+\index{vita::GUI@{vita::GUI}!vita::Core@{vita::Core}}
+\index{vita::Core@{vita::Core}!vita::GUI@{vita::GUI}}
+\doxysubsubsection{\texorpdfstring{vita::Core}{vita::Core}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classvita_1_1Core}{vita\+::\+Core}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\hyperlink{classvita_1_1Core}{Core}} is set as a friend class to set itself as a weak\+\_\+ptr during the construction of the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{GUI_8h}{G\+U\+I.\+h}}\item 
+src/engine/\mbox{\hyperlink{GUI_8cpp}{G\+U\+I.\+cpp}}\end{DoxyCompactItemize}

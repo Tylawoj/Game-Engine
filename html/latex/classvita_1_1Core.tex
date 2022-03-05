@@ -1,0 +1,272 @@
+\hypertarget{classvita_1_1Core}{}\doxysection{vita\+::Core Class Reference}
+\label{classvita_1_1Core}\index{vita::Core@{vita::Core}}
+Inheritance diagram for vita\+::Core\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Core}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::sr1\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classvita_1_1Core_ad135b85c69623880669df553c1f71c40}{Add\+Resource}} (std\+::string \+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads and returns a resource to the user, storing it in the \mbox{\hyperlink{classvita_1_1Core}{Core}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::sr1\+::vector$<$ std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$ $>$ \mbox{\hyperlink{classvita_1_1Core_a5c6ffe6ebedcbc4f8f2f945e3f8e1868}{Get\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector of Entities with the specified type. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$ \mbox{\hyperlink{classvita_1_1Core_a750ca1c85c596b0b5c55c20821b83002}{Add\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Returns an \mbox{\hyperlink{classvita_1_1Entity}{Entity}} to the user, storing it in the list of Entities. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Context $>$ \mbox{\hyperlink{classvita_1_1Core_a3a59606ab78b63a2d0b7a0f39146de4b}{Get\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend Context, used for rendering. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Camera}{Camera}} $>$ \mbox{\hyperlink{classvita_1_1Core_a97ef18820297d502e2f8ca20545d0fca}{Get\+Current\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Returns the currently used camera. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Environment}{Environment}} $>$ \mbox{\hyperlink{classvita_1_1Core_a192781e31faf3a60d3fd2518e0da198d}{Get\+Environment}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1Environment}{Environment}} class, which stores information about the environment. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Input}{Input}} $>$ \mbox{\hyperlink{classvita_1_1Core_a337d88803e4eb59dc6bbaa4de4dcbbaa}{Get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1Input}{Input}} class, which stores all mouse and keyboard inputs. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} $>$ \mbox{\hyperlink{classvita_1_1Core_acd065315821f02ab5d63991ca237f8cb}{Get\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} class, allowing to draw 2D textures for \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Resources}{Resources}} $>$ \mbox{\hyperlink{classvita_1_1Core_a9ace9e2dce25e43337125f32914028ac}{Get\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Returns a shared\+\_\+ptr to the \mbox{\hyperlink{classvita_1_1Resources}{Resources}} class, which stores all currently used resources. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Screen}{Screen}} $>$ \mbox{\hyperlink{classvita_1_1Core_acc55e9ed2c9306626056ca46922da54c}{Get\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1Screen}{Screen}} class, which stores a S\+D\+L\+\_\+\+Window and its width and height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Core_a1e2ecd94f11e82280e374bcae24bd47b}{Set\+Current\+Camera}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Camera}{Camera}} $>$ \+\_\+camera)
+\begin{DoxyCompactList}\small\item\em Sets the currently used camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Core_a1b8eebf6aaab9911f74b8faca6d24ec7}\label{classvita_1_1Core_a1b8eebf6aaab9911f74b8faca6d24ec7}} 
+void \mbox{\hyperlink{classvita_1_1Core_a1b8eebf6aaab9911f74b8faca6d24ec7}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{classvita_1_1Core}{Core}} to run. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Core_ad0c6a39b204456007261382baec5f0be}\label{classvita_1_1Core_ad0c6a39b204456007261382baec5f0be}} 
+void \mbox{\hyperlink{classvita_1_1Core_ad0c6a39b204456007261382baec5f0be}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the \mbox{\hyperlink{classvita_1_1Core}{Core}} from running. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Core_a6c0d955f452dd04b81f3eaa6754c8a1f}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Runs the \mbox{\hyperlink{classvita_1_1Core}{Core}}, which initializes the Entities with its Components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ \mbox{\hyperlink{classvita_1_1Core_ae6ce91111590ac08b8958e29cb877ffa}{Init}} (std\+::string \+\_\+title, int \+\_\+width, int \+\_\+height, int \+\_\+samples)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classvita_1_1Core}{Core}} and its class members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Core_a750ca1c85c596b0b5c55c20821b83002}\label{classvita_1_1Core_a750ca1c85c596b0b5c55c20821b83002}} 
+\index{vita::Core@{vita::Core}!AddEntity@{AddEntity}}
+\index{AddEntity@{AddEntity}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{AddEntity()}{AddEntity()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$ vita\+::\+Core\+::\+Add\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns an \mbox{\hyperlink{classvita_1_1Entity}{Entity}} to the user, storing it in the list of Entities. 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. 
+\end{DoxyReturn}
+Sets the core and entity weak\+\_\+ptrs in the created \mbox{\hyperlink{classvita_1_1Entity}{Entity}}.
+
+Pushes back the entity onto the entities list.
+
+Returns the entity.\mbox{\Hypertarget{classvita_1_1Core_ad135b85c69623880669df553c1f71c40}\label{classvita_1_1Core_ad135b85c69623880669df553c1f71c40}} 
+\index{vita::Core@{vita::Core}!AddResource@{AddResource}}
+\index{AddResource@{AddResource}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{AddResource()}{AddResource()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::sr1\+::shared\+\_\+ptr$<$T$>$ vita\+::\+Core\+::\+Add\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads and returns a resource to the user, storing it in the \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+
+\begin{DoxyReturn}{Returns}
+A loaded resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_a3a59606ab78b63a2d0b7a0f39146de4b}\label{classvita_1_1Core_a3a59606ab78b63a2d0b7a0f39146de4b}} 
+\index{vita::Core@{vita::Core}!GetContext@{GetContext}}
+\index{GetContext@{GetContext}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetContext()}{GetContext()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Context $>$ vita\+::\+Core\+::\+Get\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend Context, used for rendering. 
+
+\begin{DoxyReturn}{Returns}
+rend\textquotesingle{}s Context stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_a97ef18820297d502e2f8ca20545d0fca}\label{classvita_1_1Core_a97ef18820297d502e2f8ca20545d0fca}} 
+\index{vita::Core@{vita::Core}!GetCurrentCamera@{GetCurrentCamera}}
+\index{GetCurrentCamera@{GetCurrentCamera}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetCurrentCamera()}{GetCurrentCamera()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Camera}{Camera}} $>$ vita\+::\+Core\+::\+Get\+Current\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the currently used camera. 
+
+\begin{DoxyReturn}{Returns}
+The currently used camera by \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_a5c6ffe6ebedcbc4f8f2f945e3f8e1868}\label{classvita_1_1Core_a5c6ffe6ebedcbc4f8f2f945e3f8e1868}} 
+\index{vita::Core@{vita::Core}!GetEntities@{GetEntities}}
+\index{GetEntities@{GetEntities}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetEntities()}{GetEntities()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::sr1\+::vector$<$std\+::sr1\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classvita_1_1Entity}{Entity}}$>$ $>$ vita\+::\+Core\+::\+Get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a vector of Entities with the specified type. 
+
+\begin{DoxyReturn}{Returns}
+A vector of Entities with the specified type. 
+\end{DoxyReturn}
+Checks if an \mbox{\hyperlink{classvita_1_1Entity}{Entity}} has a component of the specified type.
+
+$<$ Pushes back the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} onto a return vector.\mbox{\Hypertarget{classvita_1_1Core_a192781e31faf3a60d3fd2518e0da198d}\label{classvita_1_1Core_a192781e31faf3a60d3fd2518e0da198d}} 
+\index{vita::Core@{vita::Core}!GetEnvironment@{GetEnvironment}}
+\index{GetEnvironment@{GetEnvironment}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetEnvironment()}{GetEnvironment()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Environment}{Environment}} $>$ vita\+::\+Core\+::\+Get\+Environment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1Environment}{Environment}} class, which stores information about the environment. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Environment}{Environment}} class stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_acd065315821f02ab5d63991ca237f8cb}\label{classvita_1_1Core_acd065315821f02ab5d63991ca237f8cb}} 
+\index{vita::Core@{vita::Core}!GetGUI@{GetGUI}}
+\index{GetGUI@{GetGUI}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetGUI()}{GetGUI()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} $>$ vita\+::\+Core\+::\+Get\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} class, allowing to draw 2D textures for \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}}. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1GUI}{G\+UI}} class stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_a337d88803e4eb59dc6bbaa4de4dcbbaa}\label{classvita_1_1Core_a337d88803e4eb59dc6bbaa4de4dcbbaa}} 
+\index{vita::Core@{vita::Core}!GetInput@{GetInput}}
+\index{GetInput@{GetInput}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetInput()}{GetInput()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Input}{Input}} $>$ vita\+::\+Core\+::\+Get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1Input}{Input}} class, which stores all mouse and keyboard inputs. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Input}{Input}} class stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_a9ace9e2dce25e43337125f32914028ac}\label{classvita_1_1Core_a9ace9e2dce25e43337125f32914028ac}} 
+\index{vita::Core@{vita::Core}!GetResources@{GetResources}}
+\index{GetResources@{GetResources}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetResources()}{GetResources()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Resources}{Resources}} $>$ vita\+::\+Core\+::\+Get\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a shared\+\_\+ptr to the \mbox{\hyperlink{classvita_1_1Resources}{Resources}} class, which stores all currently used resources. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Resources}{Resources}} class, which stores all currently used resources. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_acc55e9ed2c9306626056ca46922da54c}\label{classvita_1_1Core_acc55e9ed2c9306626056ca46922da54c}} 
+\index{vita::Core@{vita::Core}!GetScreen@{GetScreen}}
+\index{GetScreen@{GetScreen}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{GetScreen()}{GetScreen()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Screen}{Screen}} $>$ vita\+::\+Core\+::\+Get\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1Screen}{Screen}} class, which stores a S\+D\+L\+\_\+\+Window and its width and height. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Screen}{Screen}} class, which stores a S\+D\+L\+\_\+\+Window and its width and height. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Core_ae6ce91111590ac08b8958e29cb877ffa}\label{classvita_1_1Core_ae6ce91111590ac08b8958e29cb877ffa}} 
+\index{vita::Core@{vita::Core}!Init@{Init}}
+\index{Init@{Init}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ vita\+::\+Core\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+title,  }\item[{int}]{\+\_\+width,  }\item[{int}]{\+\_\+height,  }\item[{int}]{\+\_\+samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initializes the \mbox{\hyperlink{classvita_1_1Core}{Core}} and its class members. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & The title of the window. \\
+\hline
+{\em \+\_\+width} & The width of the window. \\
+\hline
+{\em \+\_\+height} & The height of the window. \\
+\hline
+{\em \+\_\+samples} & Amount of multisampling samples. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized \mbox{\hyperlink{classvita_1_1Core}{Core}}. 
+\end{DoxyReturn}
+Constructs the \mbox{\hyperlink{classvita_1_1Audio}{Audio}} and \mbox{\hyperlink{classvita_1_1Input}{Input}} members.
+
+These lines are set in a try-\/catch statement as they are trying to initialize S\+D\+L2, Open\+GL and Open\+AL, which may throw exceptions.
+
+As the engine cannot run without S\+D\+L2, Open\+GL or Open\+AL, it has to quit.
+
+As the engine cannot run without S\+D\+L2, Open\+GL or Open\+AL, it has to quit.\mbox{\Hypertarget{classvita_1_1Core_a6c0d955f452dd04b81f3eaa6754c8a1f}\label{classvita_1_1Core_a6c0d955f452dd04b81f3eaa6754c8a1f}} 
+\index{vita::Core@{vita::Core}!Run@{Run}}
+\index{Run@{Run}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void vita\+::\+Core\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs the \mbox{\hyperlink{classvita_1_1Core}{Core}}, which initializes the Entities with its Components. 
+
+Creates a timer for garbage collecting the resources.
+
+Initializes all Components in the entities stored in \mbox{\hyperlink{classvita_1_1Core}{Core}}.
+
+Initializes the environment here to get an accurate previous tick measurement.
+
+Checks for inputs in this tick.
+
+Calls the On\+Tick() function in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Clears the stored pressed and released keys/mouse buttons.
+
+Calls the On\+Collision\+Update() function in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Clears the screen from the previous render.
+
+Calls the On\+G\+U\+I() function in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Calls the On\+Display() function in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Swaps the window with the current Open\+GL render.
+
+Checks each second for resources no longer used.
+
+Stores the time of this tick.\mbox{\Hypertarget{classvita_1_1Core_a1e2ecd94f11e82280e374bcae24bd47b}\label{classvita_1_1Core_a1e2ecd94f11e82280e374bcae24bd47b}} 
+\index{vita::Core@{vita::Core}!SetCurrentCamera@{SetCurrentCamera}}
+\index{SetCurrentCamera@{SetCurrentCamera}!vita::Core@{vita::Core}}
+\doxysubsubsection{\texorpdfstring{SetCurrentCamera()}{SetCurrentCamera()}}
+{\footnotesize\ttfamily void vita\+::\+Core\+::\+Set\+Current\+Camera (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Camera}{Camera}} $>$}]{\+\_\+camera }\end{DoxyParamCaption})}
+
+
+
+Sets the currently used camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+camera} & A \mbox{\hyperlink{classvita_1_1Camera}{Camera}} class. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Core_8h}{Core.\+h}}\item 
+src/engine/\mbox{\hyperlink{Core_8cpp}{Core.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classvita_1_1Resources}{}\doxysection{vita\+::Resources Class Reference}
+\label{classvita_1_1Resources}\index{vita::Resources@{vita::Resources}}
+Inheritance diagram for vita\+::Resources\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Resources}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::sr1\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classvita_1_1Resources_a6c5d4e64d036fb06c3a32c8517f099c9}{Load}} (std\+::string \+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads and returns a \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of the specified type to the user, storing it in the \mbox{\hyperlink{classvita_1_1Resources}{Resources}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::sr1\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classvita_1_1Resources_a9c2e7d4f71c9428f6b11a1ce4fb0ccf2}{Load}} (std\+::sr1\+::vector$<$ std\+::string $>$ \+\_\+paths)
+\begin{DoxyCompactList}\small\item\em Loads and returns a \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of the specified type to the user, storing it in the \mbox{\hyperlink{classvita_1_1Resources}{Resources}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvita_1_1Resources_aeade582d41a4d7368632444ca2822b05}{vita\+::\+Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Resources_a9c2e7d4f71c9428f6b11a1ce4fb0ccf2}\label{classvita_1_1Resources_a9c2e7d4f71c9428f6b11a1ce4fb0ccf2}} 
+\index{vita::Resources@{vita::Resources}!Load@{Load}}
+\index{Load@{Load}!vita::Resources@{vita::Resources}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::sr1\+::shared\+\_\+ptr$<$T$>$ vita\+::\+Resources\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::sr1\+::vector$<$ std\+::string $>$}]{\+\_\+paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads and returns a \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of the specified type to the user, storing it in the \mbox{\hyperlink{classvita_1_1Resources}{Resources}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+paths} & A vector of file paths used by the \mbox{\hyperlink{classvita_1_1Resource}{Resource}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of a specified type. 
+\end{DoxyReturn}
+Change the file paths depending on used OS.
+
+Load the resource.
+
+Push it back onto the stored resources list.\mbox{\Hypertarget{classvita_1_1Resources_a6c5d4e64d036fb06c3a32c8517f099c9}\label{classvita_1_1Resources_a6c5d4e64d036fb06c3a32c8517f099c9}} 
+\index{vita::Resources@{vita::Resources}!Load@{Load}}
+\index{Load@{Load}!vita::Resources@{vita::Resources}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::sr1\+::shared\+\_\+ptr$<$T$>$ vita\+::\+Resources\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads and returns a \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of the specified type to the user, storing it in the \mbox{\hyperlink{classvita_1_1Resources}{Resources}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & A file path used by the \mbox{\hyperlink{classvita_1_1Resource}{Resource}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Resource}{Resource}} of a specified type. 
+\end{DoxyReturn}
+Change the path depending on used OS.
+
+Load the resource.
+
+Push it back onto the stored resources list.
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Resources_aeade582d41a4d7368632444ca2822b05}\label{classvita_1_1Resources_aeade582d41a4d7368632444ca2822b05}} 
+\index{vita::Resources@{vita::Resources}!vita::Core@{vita::Core}}
+\index{vita::Core@{vita::Core}!vita::Resources@{vita::Resources}}
+\doxysubsubsection{\texorpdfstring{vita::Core}{vita::Core}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classvita_1_1Core}{vita\+::\+Core}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\hyperlink{classvita_1_1Core}{Core}} is set as a friend class to set itself as a weak\+\_\+ptr during the construction of the \mbox{\hyperlink{classvita_1_1Resources}{Resources}} object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Resources_8h}{Resources.\+h}}\item 
+src/engine/\mbox{\hyperlink{Resources_8cpp}{Resources.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+\hypertarget{classvita_1_1Entity}{}\doxysection{vita\+::Entity Class Reference}
+\label{classvita_1_1Entity}\index{vita::Entity@{vita::Entity}}
+Inheritance diagram for vita\+::Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename... A$>$ }\\std\+::sr1\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classvita_1_1Entity_af9617493f97c16adafe50be001b10dc8}{Add\+Component}} (A... \+\_\+arguments)
+\begin{DoxyCompactList}\small\item\em Constructs and returns a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type to the user passing the arguments to the \mbox{\hyperlink{classvita_1_1Component}{Component}}\textquotesingle{}s constructor, and stores it in the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Entity_a2f26aa29a90521e11c5c0321e2ffd5f9}{Collision\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Calls the On\+Collision\+Update() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Entity_a6c60ac88ffa86ecf126654fdd60072d0}{Display}} ()
+\begin{DoxyCompactList}\small\item\em Calls the On\+Display() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::sr1\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classvita_1_1Entity_a691e4285b2b9d085077562571bce918f}{Get\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ \mbox{\hyperlink{classvita_1_1Entity_af47634f355b4c4cd19636535f787f76b}{Get\+Core}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classvita_1_1Core}{Core}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Entity_ade93cf255861ad685cf31a9742529c93}{G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Calls the On\+G\+U\+I() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classvita_1_1Entity_a278c99fb3d5f73f55fec93085fc4830f}{Has\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} has a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Entity_af60853373e07800c2dd24b09b7002e8e}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Calls the On\+Init() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Entity_a2675dd1a9be22357f9e1436225054749}{Tick}} ()
+\begin{DoxyCompactList}\small\item\em Calls the On\+Tick() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvita_1_1Entity_aeade582d41a4d7368632444ca2822b05}{vita\+::\+Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Entity_af9617493f97c16adafe50be001b10dc8}\label{classvita_1_1Entity_af9617493f97c16adafe50be001b10dc8}} 
+\index{vita::Entity@{vita::Entity}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$typename T , typename... A$>$ \\
+std\+::sr1\+::shared\+\_\+ptr$<$T$>$ vita\+::\+Entity\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{A...}]{\+\_\+arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs and returns a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type to the user passing the arguments to the \mbox{\hyperlink{classvita_1_1Component}{Component}}\textquotesingle{}s constructor, and stores it in the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+arguments} & The arguments used by a constructor of the specified type \mbox{\hyperlink{classvita_1_1Component}{Component}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Component}{Component}} of a specified type. 
+\end{DoxyReturn}
+$<$ Constructs a \mbox{\hyperlink{classvita_1_1Component}{Component}} using its own constructor, passing in specified arguments.
+
+$<$ Sets the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} itself as a weak\+\_\+ptr in the \mbox{\hyperlink{classvita_1_1Component}{Component}}.
+
+$<$ Sets the \mbox{\hyperlink{classvita_1_1Component}{Component}} as alive.
+
+$<$ Stores the \mbox{\hyperlink{classvita_1_1Component}{Component}} in \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s component list.
+
+$<$ Returns the \mbox{\hyperlink{classvita_1_1Component}{Component}}.\mbox{\Hypertarget{classvita_1_1Entity_a2f26aa29a90521e11c5c0321e2ffd5f9}\label{classvita_1_1Entity_a2f26aa29a90521e11c5c0321e2ffd5f9}} 
+\index{vita::Entity@{vita::Entity}!CollisionUpdate@{CollisionUpdate}}
+\index{CollisionUpdate@{CollisionUpdate}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{CollisionUpdate()}{CollisionUpdate()}}
+{\footnotesize\ttfamily void vita\+::\+Entity\+::\+Collision\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the On\+Collision\+Update() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. 
+
+Calls the On\+Collision\+Update() functions in each \mbox{\hyperlink{classvita_1_1Component}{Component}}.
+
+Checks whether there are any dead components after this call (exception checking).\mbox{\Hypertarget{classvita_1_1Entity_a6c60ac88ffa86ecf126654fdd60072d0}\label{classvita_1_1Entity_a6c60ac88ffa86ecf126654fdd60072d0}} 
+\index{vita::Entity@{vita::Entity}!Display@{Display}}
+\index{Display@{Display}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void vita\+::\+Entity\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the On\+Display() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. 
+
+Calls the On\+Display() functions in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Kill the component if it has thrown an exception.
+
+Kill the component if it has thrown an exception.
+
+Checks whether there are any dead components after this call (exception checking).\mbox{\Hypertarget{classvita_1_1Entity_a691e4285b2b9d085077562571bce918f}\label{classvita_1_1Entity_a691e4285b2b9d085077562571bce918f}} 
+\index{vita::Entity@{vita::Entity}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::sr1\+::shared\+\_\+ptr$<$T$>$ vita\+::\+Entity\+::\+Get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Component}{Component}} with the specified type. 
+\end{DoxyReturn}
+Compares the type of the iterated component with the searched type.
+
+Checks whether it could cast the iterated component to the searched type.\mbox{\Hypertarget{classvita_1_1Entity_af47634f355b4c4cd19636535f787f76b}\label{classvita_1_1Entity_af47634f355b4c4cd19636535f787f76b}} 
+\index{vita::Entity@{vita::Entity}!GetCore@{GetCore}}
+\index{GetCore@{GetCore}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{GetCore()}{GetCore()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Core}{Core}} $>$ vita\+::\+Entity\+::\+Get\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classvita_1_1Core}{Core}} object. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classvita_1_1Core}{Core}} of the engine. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Entity_ade93cf255861ad685cf31a9742529c93}\label{classvita_1_1Entity_ade93cf255861ad685cf31a9742529c93}} 
+\index{vita::Entity@{vita::Entity}!GUI@{GUI}}
+\index{GUI@{GUI}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{GUI()}{GUI()}}
+{\footnotesize\ttfamily void vita\+::\+Entity\+::\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the On\+G\+U\+I() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. 
+
+Calls the On\+G\+U\+I() functions in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Kill the component if it has thrown an exception.
+
+Kill the component if it has thrown an exception.
+
+Checks whether there are any dead components after this call (exception checking).\mbox{\Hypertarget{classvita_1_1Entity_a278c99fb3d5f73f55fec93085fc4830f}\label{classvita_1_1Entity_a278c99fb3d5f73f55fec93085fc4830f}} 
+\index{vita::Entity@{vita::Entity}!HasComponent@{HasComponent}}
+\index{HasComponent@{HasComponent}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{HasComponent()}{HasComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool vita\+::\+Entity\+::\+Has\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} has a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type. 
+
+\begin{DoxyReturn}{Returns}
+Whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} has a \mbox{\hyperlink{classvita_1_1Component}{Component}} of the specified type or not. 
+\end{DoxyReturn}
+Compares the type of the iterated component with the searched type.
+
+Checks whether it could cast the iterated component to the searched type.\mbox{\Hypertarget{classvita_1_1Entity_af60853373e07800c2dd24b09b7002e8e}\label{classvita_1_1Entity_af60853373e07800c2dd24b09b7002e8e}} 
+\index{vita::Entity@{vita::Entity}!Init@{Init}}
+\index{Init@{Init}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void vita\+::\+Entity\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the On\+Init() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. 
+
+Calls the On\+Init() functions in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Kill the component if it has thrown an exception.
+
+Kill the component if it has thrown an exception.
+
+Checks whether there are any dead components after this call (exception checking).\mbox{\Hypertarget{classvita_1_1Entity_a2675dd1a9be22357f9e1436225054749}\label{classvita_1_1Entity_a2675dd1a9be22357f9e1436225054749}} 
+\index{vita::Entity@{vita::Entity}!Tick@{Tick}}
+\index{Tick@{Tick}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void vita\+::\+Entity\+::\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the On\+Tick() function in each \mbox{\hyperlink{classvita_1_1Component}{Component}} stored. 
+
+Calls the On\+Tick() functions in Components of each \mbox{\hyperlink{classvita_1_1Entity}{Entity}} stored.
+
+Kill the component if it has thrown an exception.
+
+Kill the component if it has thrown an exception.
+
+Checks whether there are any dead components after this call (exception checking).
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Entity_aeade582d41a4d7368632444ca2822b05}\label{classvita_1_1Entity_aeade582d41a4d7368632444ca2822b05}} 
+\index{vita::Entity@{vita::Entity}!vita::Core@{vita::Core}}
+\index{vita::Core@{vita::Core}!vita::Entity@{vita::Entity}}
+\doxysubsubsection{\texorpdfstring{vita::Core}{vita::Core}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classvita_1_1Core}{vita\+::\+Core}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\hyperlink{classvita_1_1Core}{Core}} is set as a friend class to set itself as a weak\+\_\+ptr during the construction of an \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Entity_8h}{Entity.\+h}}\item 
+src/engine/\mbox{\hyperlink{Entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

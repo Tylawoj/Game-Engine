@@ -1,0 +1,85 @@
+\hypertarget{classvita_1_1Sound}{}\doxysection{vita\+::Sound Class Reference}
+\label{classvita_1_1Sound}\index{vita::Sound@{vita::Sound}}
+Inheritance diagram for vita\+::Sound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Sound}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Sound_ac00e8f92c14154def09a0d48c9541478}{$\sim$\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the Open\+AL buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Sound_adf473e694686a449f99b890791749893}{On\+Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a \mbox{\hyperlink{classvita_1_1Sound}{Sound}} from an O\+GG file. \end{DoxyCompactList}\item 
+A\+Luint \mbox{\hyperlink{classvita_1_1Sound_aca2b377080d4038323ac1ad356f6e257}{Get\+Buffer\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the buffer ID of the \mbox{\hyperlink{classvita_1_1Sound}{Sound}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Sound_ac00e8f92c14154def09a0d48c9541478}\label{classvita_1_1Sound_ac00e8f92c14154def09a0d48c9541478}} 
+\index{vita::Sound@{vita::Sound}!````~Sound@{$\sim$Sound}}
+\index{````~Sound@{$\sim$Sound}!vita::Sound@{vita::Sound}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sound()}{~Sound()}}
+{\footnotesize\ttfamily vita\+::\+Sound\+::$\sim$\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the Open\+AL buffer. 
+
+Delete the buffer with the stored sound.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Sound_aca2b377080d4038323ac1ad356f6e257}\label{classvita_1_1Sound_aca2b377080d4038323ac1ad356f6e257}} 
+\index{vita::Sound@{vita::Sound}!GetBufferId@{GetBufferId}}
+\index{GetBufferId@{GetBufferId}!vita::Sound@{vita::Sound}}
+\doxysubsubsection{\texorpdfstring{GetBufferId()}{GetBufferId()}}
+{\footnotesize\ttfamily A\+Luint vita\+::\+Sound\+::\+Get\+Buffer\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the buffer ID of the \mbox{\hyperlink{classvita_1_1Sound}{Sound}} object. 
+
+\begin{DoxyReturn}{Returns}
+The buffer ID of the \mbox{\hyperlink{classvita_1_1Sound}{Sound}} object. 
+\end{DoxyReturn}
+Try returning the buffer ID with the sound.
+
+If unable to, kill the resource and return N\+U\+LL.\mbox{\Hypertarget{classvita_1_1Sound_adf473e694686a449f99b890791749893}\label{classvita_1_1Sound_adf473e694686a449f99b890791749893}} 
+\index{vita::Sound@{vita::Sound}!OnLoad@{OnLoad}}
+\index{OnLoad@{OnLoad}!vita::Sound@{vita::Sound}}
+\doxysubsubsection{\texorpdfstring{OnLoad()}{OnLoad()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+::\+On\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a \mbox{\hyperlink{classvita_1_1Sound}{Sound}} from an O\+GG file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to the O\+GG file. \\
+\hline
+\end{DoxyParams}
+Create a sound buffer.
+
+Decode the O\+GG file using S\+T\+B\+\_\+\+Vorbis.
+
+Record the sample rate required by Open\+AL.
+
+Record the format required by Open\+AL.
+
+Allocate space for the sound in the buffer.
+
+Clean up the read data.
+
+Store the buffer data at the given buffer ID.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}{vita\+::\+Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Sound_8h}{Sound.\+h}}\item 
+src/engine/\mbox{\hyperlink{Sound_8cpp}{Sound.\+cpp}}\end{DoxyCompactItemize}

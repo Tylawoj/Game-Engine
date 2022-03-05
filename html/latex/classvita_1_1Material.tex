@@ -1,0 +1,155 @@
+\hypertarget{classvita_1_1Material}{}\doxysection{vita\+::Material Class Reference}
+\label{classvita_1_1Material}\index{vita::Material@{vita::Material}}
+Inheritance diagram for vita\+::Material\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Material}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Material_a5d44721a4fa698801f46a32cb2bbb1b4}{Material}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$ \+\_\+shader, std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$ \+\_\+texture)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1Material}{Material}} with the already constructed shader and texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvita_1_1Material_ad0d0b08c91faaa3bd5de84388940c829}{Material}} (std\+::string \&\+\_\+shader\+Path, std\+::string \&\+\_\+texture\+Path)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1Material}{Material}}, loading and constructing a shader and a texture from the specified paths. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Shader $>$ \mbox{\hyperlink{classvita_1_1Material_a3fc03b9ca7b4c6348d26a03ef80213c4}{Get\+Rend\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from the member \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Texture $>$ \mbox{\hyperlink{classvita_1_1Material_af71272a18e5390c9a9da65878290bb70}{Get\+Rend\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} from the member \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classvita_1_1Material_a4b1c1ab638a2ae30286944bb63d6a01b}{Get\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Returns the stored \mbox{\hyperlink{classvita_1_1Shader}{Shader}}. \end{DoxyCompactList}\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$ \mbox{\hyperlink{classvita_1_1Material_ac681519e05e6426edf38cb6c0ec2d950}{Get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Returns the stored \mbox{\hyperlink{classvita_1_1Texture}{Texture}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Material_aa3af176a2853ed82c34d74b72985e2ce}{Set\+Shader}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$ \+\_\+shader)
+\begin{DoxyCompactList}\small\item\em Sets a new shader for the \mbox{\hyperlink{classvita_1_1Material}{Material}} to use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Material_a64e3226f0aff013ba2ed76b6b787e43d}{Set\+Texture}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$ \+\_\+texture)
+\begin{DoxyCompactList}\small\item\em Sets a new texture for the \mbox{\hyperlink{classvita_1_1Material}{Material}} to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Material_a5d44721a4fa698801f46a32cb2bbb1b4}\label{classvita_1_1Material_a5d44721a4fa698801f46a32cb2bbb1b4}} 
+\index{vita::Material@{vita::Material}!Material@{Material}}
+\index{Material@{Material}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vita\+::\+Material\+::\+Material (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$}]{\+\_\+shader,  }\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$}]{\+\_\+texture }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1Material}{Material}} with the already constructed shader and texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+shader} & A loaded \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. \\
+\hline
+{\em \+\_\+texture} & A loaded \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Material_ad0d0b08c91faaa3bd5de84388940c829}\label{classvita_1_1Material_ad0d0b08c91faaa3bd5de84388940c829}} 
+\index{vita::Material@{vita::Material}!Material@{Material}}
+\index{Material@{Material}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vita\+::\+Material\+::\+Material (\begin{DoxyParamCaption}\item[{std\+::string \&}]{\+\_\+shader\+Path,  }\item[{std\+::string \&}]{\+\_\+texture\+Path }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1Material}{Material}}, loading and constructing a shader and a texture from the specified paths. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+shader\+Path} & A file path to the shader. \\
+\hline
+{\em \+\_\+texture\+Path} & A file path to the texture. \\
+\hline
+\end{DoxyParams}
+Creates a \mbox{\hyperlink{classvita_1_1Shader}{Shader}} and \mbox{\hyperlink{classvita_1_1Texture}{Texture}} using the specified file paths, and sets them as class members.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Material_a3fc03b9ca7b4c6348d26a03ef80213c4}\label{classvita_1_1Material_a3fc03b9ca7b4c6348d26a03ef80213c4}} 
+\index{vita::Material@{vita::Material}!GetRendShader@{GetRendShader}}
+\index{GetRendShader@{GetRendShader}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{GetRendShader()}{GetRendShader()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Shader $>$ vita\+::\+Material\+::\+Get\+Rend\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from the member \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. 
+
+\begin{DoxyReturn}{Returns}
+The rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from the member \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Material_af71272a18e5390c9a9da65878290bb70}\label{classvita_1_1Material_af71272a18e5390c9a9da65878290bb70}} 
+\index{vita::Material@{vita::Material}!GetRendTexture@{GetRendTexture}}
+\index{GetRendTexture@{GetRendTexture}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{GetRendTexture()}{GetRendTexture()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Texture $>$ vita\+::\+Material\+::\+Get\+Rend\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} from the member \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. 
+
+\begin{DoxyReturn}{Returns}
+The rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} from the member \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Material_a4b1c1ab638a2ae30286944bb63d6a01b}\label{classvita_1_1Material_a4b1c1ab638a2ae30286944bb63d6a01b}} 
+\index{vita::Material@{vita::Material}!GetShader@{GetShader}}
+\index{GetShader@{GetShader}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{GetShader()}{GetShader()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$ vita\+::\+Material\+::\+Get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the stored \mbox{\hyperlink{classvita_1_1Shader}{Shader}}. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Material_ac681519e05e6426edf38cb6c0ec2d950}\label{classvita_1_1Material_ac681519e05e6426edf38cb6c0ec2d950}} 
+\index{vita::Material@{vita::Material}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$ vita\+::\+Material\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the stored \mbox{\hyperlink{classvita_1_1Texture}{Texture}}. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Material_aa3af176a2853ed82c34d74b72985e2ce}\label{classvita_1_1Material_aa3af176a2853ed82c34d74b72985e2ce}} 
+\index{vita::Material@{vita::Material}!SetShader@{SetShader}}
+\index{SetShader@{SetShader}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{SetShader()}{SetShader()}}
+{\footnotesize\ttfamily void vita\+::\+Material\+::\+Set\+Shader (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Shader}{Shader}} $>$}]{\+\_\+shader }\end{DoxyParamCaption})}
+
+
+
+Sets a new shader for the \mbox{\hyperlink{classvita_1_1Material}{Material}} to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+shader} & A \mbox{\hyperlink{classvita_1_1Shader}{Shader}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Material_a64e3226f0aff013ba2ed76b6b787e43d}\label{classvita_1_1Material_a64e3226f0aff013ba2ed76b6b787e43d}} 
+\index{vita::Material@{vita::Material}!SetTexture@{SetTexture}}
+\index{SetTexture@{SetTexture}!vita::Material@{vita::Material}}
+\doxysubsubsection{\texorpdfstring{SetTexture()}{SetTexture()}}
+{\footnotesize\ttfamily void vita\+::\+Material\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Texture}{Texture}} $>$}]{\+\_\+texture }\end{DoxyParamCaption})}
+
+
+
+Sets a new texture for the \mbox{\hyperlink{classvita_1_1Material}{Material}} to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+texture} & A \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Material_8h}{Material.\+h}}\item 
+src/engine/\mbox{\hyperlink{Material_8cpp}{Material.\+cpp}}\end{DoxyCompactItemize}

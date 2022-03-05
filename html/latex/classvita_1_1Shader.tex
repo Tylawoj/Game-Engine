@@ -1,0 +1,62 @@
+\hypertarget{classvita_1_1Shader}{}\doxysection{vita\+::Shader Class Reference}
+\label{classvita_1_1Shader}\index{vita::Shader@{vita::Shader}}
+Inheritance diagram for vita\+::Shader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Shader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Shader $>$ \mbox{\hyperlink{classvita_1_1Shader_a4a1eecbe70646ae4d6e1223ffed1aa73}{Get\+Rend\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}}, used in rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Shader_a098193d54219b6dccd90c5ba05fe800d}{On\+Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from a text file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Shader_a4a1eecbe70646ae4d6e1223ffed1aa73}\label{classvita_1_1Shader_a4a1eecbe70646ae4d6e1223ffed1aa73}} 
+\index{vita::Shader@{vita::Shader}!GetRendShader@{GetRendShader}}
+\index{GetRendShader@{GetRendShader}!vita::Shader@{vita::Shader}}
+\doxysubsubsection{\texorpdfstring{GetRendShader()}{GetRendShader()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Shader $>$ vita\+::\+Shader\+::\+Get\+Rend\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}}, used in rendering. 
+
+\begin{DoxyReturn}{Returns}
+The rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} shader. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Shader_a098193d54219b6dccd90c5ba05fe800d}\label{classvita_1_1Shader_a098193d54219b6dccd90c5ba05fe800d}} 
+\index{vita::Shader@{vita::Shader}!OnLoad@{OnLoad}}
+\index{OnLoad@{OnLoad}!vita::Shader@{vita::Shader}}
+\doxysubsubsection{\texorpdfstring{OnLoad()}{OnLoad()}}
+{\footnotesize\ttfamily void vita\+::\+Shader\+::\+On\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a \mbox{\hyperlink{classvita_1_1Shader}{Shader}} from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to the text file. \\
+\hline
+\end{DoxyParams}
+Creates a rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Shader}{Shader}}.
+
+Open the file from the specified path.
+
+Store the file\textquotesingle{}s content into a string.
+
+Parse the string with the shader to rend.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}{vita\+::\+Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Shader_8h}{Shader.\+h}}\item 
+src/engine/\mbox{\hyperlink{Shader_8cpp}{Shader.\+cpp}}\end{DoxyCompactItemize}

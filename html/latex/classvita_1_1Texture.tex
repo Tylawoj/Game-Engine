@@ -1,0 +1,64 @@
+\hypertarget{classvita_1_1Texture}{}\doxysection{vita\+::Texture Class Reference}
+\label{classvita_1_1Texture}\index{vita::Texture@{vita::Texture}}
+Inheritance diagram for vita\+::Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Texture $>$ \mbox{\hyperlink{classvita_1_1Texture_abb5e6183e683b5127dc230a3b2b8d14d}{Get\+Rend\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}}, used in rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Texture_a8af2d053bd395e1db94561937563220f}{On\+Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a \mbox{\hyperlink{classvita_1_1Sound}{Sound}} from an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Texture_abb5e6183e683b5127dc230a3b2b8d14d}\label{classvita_1_1Texture_abb5e6183e683b5127dc230a3b2b8d14d}} 
+\index{vita::Texture@{vita::Texture}!GetRendTexture@{GetRendTexture}}
+\index{GetRendTexture@{GetRendTexture}!vita::Texture@{vita::Texture}}
+\doxysubsubsection{\texorpdfstring{GetRendTexture()}{GetRendTexture()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Texture $>$ vita\+::\+Texture\+::\+Get\+Rend\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}}, used in rendering. 
+
+\begin{DoxyReturn}{Returns}
+The rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Texture_a8af2d053bd395e1db94561937563220f}\label{classvita_1_1Texture_a8af2d053bd395e1db94561937563220f}} 
+\index{vita::Texture@{vita::Texture}!OnLoad@{OnLoad}}
+\index{OnLoad@{OnLoad}!vita::Texture@{vita::Texture}}
+\doxysubsubsection{\texorpdfstring{OnLoad()}{OnLoad()}}
+{\footnotesize\ttfamily void vita\+::\+Texture\+::\+On\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a \mbox{\hyperlink{classvita_1_1Sound}{Sound}} from an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to the image. \\
+\hline
+\end{DoxyParams}
+Creates a rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}}.
+
+Load texture data from the image file specified using S\+T\+B\+\_\+\+Image.
+
+Set the rend\textquotesingle{}s texture size.
+
+Set the colour data for each pixel in the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Texture}{Texture}} object.
+
+Free the texture data.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}{vita\+::\+Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Texture_8h}{Texture.\+h}}\item 
+src/engine/\mbox{\hyperlink{Texture_8cpp}{Texture.\+cpp}}\end{DoxyCompactItemize}

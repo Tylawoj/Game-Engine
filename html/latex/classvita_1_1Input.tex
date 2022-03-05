@@ -1,0 +1,225 @@
+\hypertarget{classvita_1_1Input}{}\doxysection{vita\+::Input Class Reference}
+\label{classvita_1_1Input}\index{vita::Input@{vita::Input}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Input_ab62a6b9d5875da6ae7cd824a258c0c4c}{Input}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Input_a64fca8bc9170a560130920bf0174da63}{Clear\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Clears the stored pressed/released keycodes/mouse\+Buttons. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_a2c12b9f7ab0e3d4679ab901462607957}{Get\+Key}} (int \+\_\+key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns if the key is pressed/held. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_a8de3d728fbcc067ef735d7668fd615b9}{Get\+Key\+Pressed}} (int \+\_\+key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns if the key has been pressed (but not held). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_aac57003af3fff9573adbe8a4ab84f42f}{Get\+Key\+Released}} (int \+\_\+key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns if the key has been released. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_ac78b8e099d4623363c633add7dfe4e1c}{Get\+Mouse\+Button}} (int \+\_\+mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Returns if a mouse button is pressed/held. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_a8900034131863fcf1c5d82718a1c31fb}{Get\+Mouse\+Button\+Pressed}} (int \+\_\+mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Returns if the mouse button has been pressed (but not held). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1Input_a5f9342d6b7e1ac4e16750f3ef8cb6997}{Get\+Mouse\+Button\+Released}} (int \+\_\+mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Returns if the mouse button has been released. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvita_1_1Input_ade1a9a150127ed932d935a8c11ed1795}{Get\+Mouse\+MotionX}} ()
+\begin{DoxyCompactList}\small\item\em Returns x-\/axis mouse motion. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvita_1_1Input_a94e41af53b73ceece4eb18c872582994}{Get\+Mouse\+MotionY}} ()
+\begin{DoxyCompactList}\small\item\em Returns y-\/axis mouse motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Input_a7be034c8a6f165b47c4941a82f38d4f2}{Update\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Updates the inputs for this frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvita_1_1Input_aeade582d41a4d7368632444ca2822b05}\label{classvita_1_1Input_aeade582d41a4d7368632444ca2822b05}} 
+class {\bfseries vita\+::\+Core}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Input_ab62a6b9d5875da6ae7cd824a258c0c4c}\label{classvita_1_1Input_ab62a6b9d5875da6ae7cd824a258c0c4c}} 
+\index{vita::Input@{vita::Input}!Input@{Input}}
+\index{Input@{Input}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily vita\+::\+Input\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the member variables. 
+
+Initialize the vectors.
+
+Set the initial mouse motion to 0.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Input_a64fca8bc9170a560130920bf0174da63}\label{classvita_1_1Input_a64fca8bc9170a560130920bf0174da63}} 
+\index{vita::Input@{vita::Input}!ClearInput@{ClearInput}}
+\index{ClearInput@{ClearInput}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{ClearInput()}{ClearInput()}}
+{\footnotesize\ttfamily void vita\+::\+Input\+::\+Clear\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the stored pressed/released keycodes/mouse\+Buttons. 
+
+Set all keys and mouse buttons pressed or released to false.
+
+Set the mouse motion to 0.\mbox{\Hypertarget{classvita_1_1Input_a2c12b9f7ab0e3d4679ab901462607957}\label{classvita_1_1Input_a2c12b9f7ab0e3d4679ab901462607957}} 
+\index{vita::Input@{vita::Input}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Key (\begin{DoxyParamCaption}\item[{int}]{\+\_\+key\+Code }\end{DoxyParamCaption})}
+
+
+
+Returns if the key is pressed/held. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key\+Code} & The specified key code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the key has been pressed/held or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_a8de3d728fbcc067ef735d7668fd615b9}\label{classvita_1_1Input_a8de3d728fbcc067ef735d7668fd615b9}} 
+\index{vita::Input@{vita::Input}!GetKeyPressed@{GetKeyPressed}}
+\index{GetKeyPressed@{GetKeyPressed}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetKeyPressed()}{GetKeyPressed()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{\+\_\+key\+Code }\end{DoxyParamCaption})}
+
+
+
+Returns if the key has been pressed (but not held). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key\+Code} & The specified key code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the key has been pressed or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_aac57003af3fff9573adbe8a4ab84f42f}\label{classvita_1_1Input_aac57003af3fff9573adbe8a4ab84f42f}} 
+\index{vita::Input@{vita::Input}!GetKeyReleased@{GetKeyReleased}}
+\index{GetKeyReleased@{GetKeyReleased}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetKeyReleased()}{GetKeyReleased()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Key\+Released (\begin{DoxyParamCaption}\item[{int}]{\+\_\+key\+Code }\end{DoxyParamCaption})}
+
+
+
+Returns if the key has been released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key\+Code} & The specified key code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the key has been released or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_ac78b8e099d4623363c633add7dfe4e1c}\label{classvita_1_1Input_ac78b8e099d4623363c633add7dfe4e1c}} 
+\index{vita::Input@{vita::Input}!GetMouseButton@{GetMouseButton}}
+\index{GetMouseButton@{GetMouseButton}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButton()}{GetMouseButton()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Mouse\+Button (\begin{DoxyParamCaption}\item[{int}]{\+\_\+mouse\+Button }\end{DoxyParamCaption})}
+
+
+
+Returns if a mouse button is pressed/held. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+mouse\+Button} & The specified mouse button. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the mouse button is pressed/held or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_a8900034131863fcf1c5d82718a1c31fb}\label{classvita_1_1Input_a8900034131863fcf1c5d82718a1c31fb}} 
+\index{vita::Input@{vita::Input}!GetMouseButtonPressed@{GetMouseButtonPressed}}
+\index{GetMouseButtonPressed@{GetMouseButtonPressed}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButtonPressed()}{GetMouseButtonPressed()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{\+\_\+mouse\+Button }\end{DoxyParamCaption})}
+
+
+
+Returns if the mouse button has been pressed (but not held). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+mouse\+Button} & The specified mouse button. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the mouse button has been pressed or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_a5f9342d6b7e1ac4e16750f3ef8cb6997}\label{classvita_1_1Input_a5f9342d6b7e1ac4e16750f3ef8cb6997}} 
+\index{vita::Input@{vita::Input}!GetMouseButtonReleased@{GetMouseButtonReleased}}
+\index{GetMouseButtonReleased@{GetMouseButtonReleased}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButtonReleased()}{GetMouseButtonReleased()}}
+{\footnotesize\ttfamily bool vita\+::\+Input\+::\+Get\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{int}]{\+\_\+mouse\+Button }\end{DoxyParamCaption})}
+
+
+
+Returns if the mouse button has been released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+mouse\+Button} & The specified mouse button. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the mouse button has been released or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_ade1a9a150127ed932d935a8c11ed1795}\label{classvita_1_1Input_ade1a9a150127ed932d935a8c11ed1795}} 
+\index{vita::Input@{vita::Input}!GetMouseMotionX@{GetMouseMotionX}}
+\index{GetMouseMotionX@{GetMouseMotionX}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseMotionX()}{GetMouseMotionX()}}
+{\footnotesize\ttfamily int vita\+::\+Input\+::\+Get\+Mouse\+MotionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns x-\/axis mouse motion. 
+
+\begin{DoxyReturn}{Returns}
+X-\/axis mouse motion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_a94e41af53b73ceece4eb18c872582994}\label{classvita_1_1Input_a94e41af53b73ceece4eb18c872582994}} 
+\index{vita::Input@{vita::Input}!GetMouseMotionY@{GetMouseMotionY}}
+\index{GetMouseMotionY@{GetMouseMotionY}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseMotionY()}{GetMouseMotionY()}}
+{\footnotesize\ttfamily int vita\+::\+Input\+::\+Get\+Mouse\+MotionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns y-\/axis mouse motion. 
+
+\begin{DoxyReturn}{Returns}
+Y-\/axis mouse motion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Input_a7be034c8a6f165b47c4941a82f38d4f2}\label{classvita_1_1Input_a7be034c8a6f165b47c4941a82f38d4f2}} 
+\index{vita::Input@{vita::Input}!UpdateInput@{UpdateInput}}
+\index{UpdateInput@{UpdateInput}!vita::Input@{vita::Input}}
+\doxysubsubsection{\texorpdfstring{UpdateInput()}{UpdateInput()}}
+{\footnotesize\ttfamily void vita\+::\+Input\+::\+Update\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the inputs for this frame. 
+
+Check the event type.
+
+If the user quits the window, this means that the core must stop.
+
+Check for key presses.
+
+Check for key releases.
+
+Check for mouse button presses.
+
+Check for mouse button releases.
+
+Check for mouse movements.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Input_8h}{Input.\+h}}\item 
+src/engine/\mbox{\hyperlink{Input_8cpp}{Input.\+cpp}}\end{DoxyCompactItemize}

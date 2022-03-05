@@ -1,0 +1,106 @@
+\hypertarget{classvita_1_1BoxCollider}{}\doxysection{vita\+::Box\+Collider Class Reference}
+\label{classvita_1_1BoxCollider}\index{vita::BoxCollider@{vita::BoxCollider}}
+Inheritance diagram for vita\+::Box\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1BoxCollider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1BoxCollider_afc5d78a3686952c842923a4f6f014e91}{Box\+Collider}} (glm\+::vec3 \+\_\+size, glm\+::vec3 \+\_\+offset, bool \+\_\+solid)
+\begin{DoxyCompactList}\small\item\em Initializes a \mbox{\hyperlink{classvita_1_1BoxCollider}{Box\+Collider}}, setting its size, offset from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position and whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} is solid (inmovable). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1BoxCollider_a8ac5c7199e777e1174c82b1195f3affe}{On\+Collision\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Checks for collisions with any other colliders in the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1BoxCollider_a7ee64e1aace4934ed4d930ffaa6a94e7}{Set\+Size}} (glm\+::vec3 \+\_\+size)
+\begin{DoxyCompactList}\small\item\em Sets the size of the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1BoxCollider_aed5bafaa12b2b6a2d2456cdb33764797}{Set\+Offset}} (glm\+::vec3 \+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Sets the offset for the collider from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1BoxCollider_afc5d78a3686952c842923a4f6f014e91}\label{classvita_1_1BoxCollider_afc5d78a3686952c842923a4f6f014e91}} 
+\index{vita::BoxCollider@{vita::BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!vita::BoxCollider@{vita::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}}
+{\footnotesize\ttfamily vita\+::\+Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+size,  }\item[{glm\+::vec3}]{\+\_\+offset,  }\item[{bool}]{\+\_\+solid }\end{DoxyParamCaption})}
+
+
+
+Initializes a \mbox{\hyperlink{classvita_1_1BoxCollider}{Box\+Collider}}, setting its size, offset from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position and whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} is solid (inmovable). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+size} & The size of the collider. \\
+\hline
+{\em \+\_\+offset} & The offset from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. \\
+\hline
+{\em \+\_\+solid} & Sets whether the \mbox{\hyperlink{classvita_1_1Entity}{Entity}} is movable or not. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1BoxCollider_a8ac5c7199e777e1174c82b1195f3affe}\label{classvita_1_1BoxCollider_a8ac5c7199e777e1174c82b1195f3affe}} 
+\index{vita::BoxCollider@{vita::BoxCollider}!OnCollisionUpdate@{OnCollisionUpdate}}
+\index{OnCollisionUpdate@{OnCollisionUpdate}!vita::BoxCollider@{vita::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{OnCollisionUpdate()}{OnCollisionUpdate()}}
+{\footnotesize\ttfamily void vita\+::\+Box\+Collider\+::\+On\+Collision\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks for collisions with any other colliders in the scene. 
+
+Set the current position to \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Transform}{Transform}} position, with a pre-\/set offset.
+
+Loop through other Entities with box colliders in the scene.
+
+If the iterator is the same as this entity, continue looping.
+
+Get the other box collider.
+
+Set the new position depending on the collision response with the other box collider.
+
+Remove the offset from the new position.
+
+Set the new position to this \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s transform.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Component_aaff10257b89833763daeae6e0b4a116d}{vita\+::\+Component}}.
+
+\mbox{\Hypertarget{classvita_1_1BoxCollider_aed5bafaa12b2b6a2d2456cdb33764797}\label{classvita_1_1BoxCollider_aed5bafaa12b2b6a2d2456cdb33764797}} 
+\index{vita::BoxCollider@{vita::BoxCollider}!SetOffset@{SetOffset}}
+\index{SetOffset@{SetOffset}!vita::BoxCollider@{vita::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{SetOffset()}{SetOffset()}}
+{\footnotesize\ttfamily void vita\+::\+Box\+Collider\+::\+Set\+Offset (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Sets the offset for the collider from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+offset} & The offset from \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1BoxCollider_a7ee64e1aace4934ed4d930ffaa6a94e7}\label{classvita_1_1BoxCollider_a7ee64e1aace4934ed4d930ffaa6a94e7}} 
+\index{vita::BoxCollider@{vita::BoxCollider}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!vita::BoxCollider@{vita::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily void vita\+::\+Box\+Collider\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+size} & The size of the collider. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{BoxCollider_8h}{Box\+Collider.\+h}}\item 
+src/engine/\mbox{\hyperlink{BoxCollider_8cpp}{Box\+Collider.\+cpp}}\end{DoxyCompactItemize}

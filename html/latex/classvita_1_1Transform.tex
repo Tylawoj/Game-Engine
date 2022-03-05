@@ -1,0 +1,274 @@
+\hypertarget{classvita_1_1Transform}{}\doxysection{vita\+::Transform Class Reference}
+\label{classvita_1_1Transform}\index{vita::Transform@{vita::Transform}}
+Inheritance diagram for vita\+::Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Transform_afbafaf9a28ac422db11f4c3f8379ca3a}{Transform}} (glm\+::vec3 \+\_\+position, glm\+::vec3 \+\_\+rotation, glm\+::vec3 \+\_\+scale)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, using the set position, rotation and scale. Use degrees and axis-\/angled rotation only. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvita_1_1Transform_aaba37cc392b1882c8a0f5342e2de24b6}{Transform}} (glm\+::vec3 \+\_\+position, glm\+::vec3 \+\_\+rotation, glm\+::vec3 \+\_\+scale, std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$ \+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, using the set position, rotation and scale, and sets it as a child to a parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. Use degrees and axis-\/angled rotation only. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_a1913cdcbc7942a75fd4a5b8857d73051}{Get\+Global\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_adc00407ae13d833611379ba790af8a3a}{Get\+Global\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rotation from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s rotation. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_a53275a3e2b1d80886a19756fcf9b3f75}{Get\+Global\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Returns the scale from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_a2af0e68c23e18e14058457e0af2040ec}{Get\+Local\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_a00bc6a8ee281536e3421a0be40d401cd}{Get\+Local\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classvita_1_1Transform_af7555b2a3f374c91d9866516d642f292}{Get\+Local\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local scale of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classvita_1_1Transform_adb0c496c559c315265aac31b94e7903a}{Get\+Transform\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Creates a transformation matrix using the \mbox{\hyperlink{classvita_1_1Transform}{Transform}}\textquotesingle{}s position, rotation and scale and returns it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Transform_a98c25a66be661b5de9aa4891e0685d46}\label{classvita_1_1Transform_a98c25a66be661b5de9aa4891e0685d46}} 
+void \mbox{\hyperlink{classvita_1_1Transform_a98c25a66be661b5de9aa4891e0685d46}{Remove\+Child\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Removes the child status from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Transform_ae9120518aa6f11ba56d202d149a0af08}{Rotate}} (glm\+::vec3 \+\_\+rotation)
+\begin{DoxyCompactList}\small\item\em Rotates the \mbox{\hyperlink{classvita_1_1Transform}{Transform}} using axis-\/angled rotation. Use degrees only. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Transform_ab251fee3dd344f5444ccebb536983a5f}{Set\+As\+Children\+Of}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$ \+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Sets this \mbox{\hyperlink{classvita_1_1Transform}{Transform}} as a child of another \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Transform_a1740e61f38e9a331009e6925e058d2eb}{Set\+Local\+Position}} (glm\+::vec3 \+\_\+position)
+\begin{DoxyCompactList}\small\item\em Sets the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Transform_a46bb88bc40bc3922e5f344f8621880e7}{Set\+Local\+Rotation}} (glm\+::vec3 \+\_\+rotation)
+\begin{DoxyCompactList}\small\item\em Sets the local rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. Use degrees and axis-\/angled rotation only. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Transform_aa958caad4c9b2a84e087be25d3ac76b2}{Translate}} (glm\+::vec3 \+\_\+translation)
+\begin{DoxyCompactList}\small\item\em Translates the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Transform_afbafaf9a28ac422db11f4c3f8379ca3a}\label{classvita_1_1Transform_afbafaf9a28ac422db11f4c3f8379ca3a}} 
+\index{vita::Transform@{vita::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vita\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position,  }\item[{glm\+::vec3}]{\+\_\+rotation,  }\item[{glm\+::vec3}]{\+\_\+scale }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, using the set position, rotation and scale. Use degrees and axis-\/angled rotation only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & The position of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+{\em \+\_\+rotation} & The rotation of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+{\em \+\_\+scale} & The scale of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Transform_aaba37cc392b1882c8a0f5342e2de24b6}\label{classvita_1_1Transform_aaba37cc392b1882c8a0f5342e2de24b6}} 
+\index{vita::Transform@{vita::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vita\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position,  }\item[{glm\+::vec3}]{\+\_\+rotation,  }\item[{glm\+::vec3}]{\+\_\+scale,  }\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$}]{\+\_\+parent }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, using the set position, rotation and scale, and sets it as a child to a parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. Use degrees and axis-\/angled rotation only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & The position of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+{\em \+\_\+rotation} & The rotation of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+{\em \+\_\+scale} & The scale of the \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+{\em \+\_\+parent} & The parent \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Transform_a1913cdcbc7942a75fd4a5b8857d73051}\label{classvita_1_1Transform_a1913cdcbc7942a75fd4a5b8857d73051}} 
+\index{vita::Transform@{vita::Transform}!GetGlobalPosition@{GetGlobalPosition}}
+\index{GetGlobalPosition@{GetGlobalPosition}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetGlobalPosition()}{GetGlobalPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Global\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the position from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s position. 
+
+\begin{DoxyReturn}{Returns}
+Global position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+If this transform was set as a child of another \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, multiply the model matrix by the parent\textquotesingle{}s transformation matrix. This can go recursive.
+
+Extract the position from the transformation matrix and multiply by the local position.
+
+If there is no parent set, just return local position.\mbox{\Hypertarget{classvita_1_1Transform_adc00407ae13d833611379ba790af8a3a}\label{classvita_1_1Transform_adc00407ae13d833611379ba790af8a3a}} 
+\index{vita::Transform@{vita::Transform}!GetGlobalRotation@{GetGlobalRotation}}
+\index{GetGlobalRotation@{GetGlobalRotation}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetGlobalRotation()}{GetGlobalRotation()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Global\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rotation from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s rotation. 
+
+\begin{DoxyReturn}{Returns}
+Global rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+If this transform was set as a child of another \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, multiply the model matrix by the parent\textquotesingle{}s transformation matrix. This can go recursive.
+
+Decompose the transformation matrix to receive the rotation, converting it into axis-\/angled rotation. Reference\+: \href{https://stackoverflow.com/questions/29229611/quaternion-to-axis-angles}{\texttt{ https\+://stackoverflow.\+com/questions/29229611/quaternion-\/to-\/axis-\/angles}} \href{https://stackoverflow.com/questions/17918033/glm-decompose-mat4-into-translation-and-rotation}{\texttt{ https\+://stackoverflow.\+com/questions/17918033/glm-\/decompose-\/mat4-\/into-\/translation-\/and-\/rotation}}
+
+If there is no parent set, just return local rotation.\mbox{\Hypertarget{classvita_1_1Transform_a53275a3e2b1d80886a19756fcf9b3f75}\label{classvita_1_1Transform_a53275a3e2b1d80886a19756fcf9b3f75}} 
+\index{vita::Transform@{vita::Transform}!GetGlobalScale@{GetGlobalScale}}
+\index{GetGlobalScale@{GetGlobalScale}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetGlobalScale()}{GetGlobalScale()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Global\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the scale from this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, taking into account parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s scale. 
+
+\begin{DoxyReturn}{Returns}
+Global scale of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+If this transform was set as a child of another \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, multiply the model matrix by the parent\textquotesingle{}s transformation matrix. This can go recursive.
+
+Decompose the transformation matrix to receive the rotation, converting it into axis-\/angled rotation. Reference\+: \href{https://stackoverflow.com/questions/17918033/glm-decompose-mat4-into-translation-and-rotation}{\texttt{ https\+://stackoverflow.\+com/questions/17918033/glm-\/decompose-\/mat4-\/into-\/translation-\/and-\/rotation}}
+
+If there is no parent set, just return local scale.\mbox{\Hypertarget{classvita_1_1Transform_a2af0e68c23e18e14058457e0af2040ec}\label{classvita_1_1Transform_a2af0e68c23e18e14058457e0af2040ec}} 
+\index{vita::Transform@{vita::Transform}!GetLocalPosition@{GetLocalPosition}}
+\index{GetLocalPosition@{GetLocalPosition}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetLocalPosition()}{GetLocalPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Local\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+
+\begin{DoxyReturn}{Returns}
+Local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Transform_a00bc6a8ee281536e3421a0be40d401cd}\label{classvita_1_1Transform_a00bc6a8ee281536e3421a0be40d401cd}} 
+\index{vita::Transform@{vita::Transform}!GetLocalRotation@{GetLocalRotation}}
+\index{GetLocalRotation@{GetLocalRotation}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetLocalRotation()}{GetLocalRotation()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Local\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+
+\begin{DoxyReturn}{Returns}
+Local rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Transform_af7555b2a3f374c91d9866516d642f292}\label{classvita_1_1Transform_af7555b2a3f374c91d9866516d642f292}} 
+\index{vita::Transform@{vita::Transform}!GetLocalScale@{GetLocalScale}}
+\index{GetLocalScale@{GetLocalScale}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetLocalScale()}{GetLocalScale()}}
+{\footnotesize\ttfamily glm\+::vec3 vita\+::\+Transform\+::\+Get\+Local\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local scale of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+
+\begin{DoxyReturn}{Returns}
+Local scale of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Transform_adb0c496c559c315265aac31b94e7903a}\label{classvita_1_1Transform_adb0c496c559c315265aac31b94e7903a}} 
+\index{vita::Transform@{vita::Transform}!GetTransformMatrix@{GetTransformMatrix}}
+\index{GetTransformMatrix@{GetTransformMatrix}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{GetTransformMatrix()}{GetTransformMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 vita\+::\+Transform\+::\+Get\+Transform\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a transformation matrix using the \mbox{\hyperlink{classvita_1_1Transform}{Transform}}\textquotesingle{}s position, rotation and scale and returns it. 
+
+\begin{DoxyReturn}{Returns}
+A transformation matrix. 
+\end{DoxyReturn}
+If this transform was set as a child of another \mbox{\hyperlink{classvita_1_1Transform}{Transform}}, multiply the model matrix by the parent\textquotesingle{}s transformation matrix. This can go recursive.
+
+Translate, rotate and scale the transformation matrix with the local values.\mbox{\Hypertarget{classvita_1_1Transform_ae9120518aa6f11ba56d202d149a0af08}\label{classvita_1_1Transform_ae9120518aa6f11ba56d202d149a0af08}} 
+\index{vita::Transform@{vita::Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void vita\+::\+Transform\+::\+Rotate (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rotation }\end{DoxyParamCaption})}
+
+
+
+Rotates the \mbox{\hyperlink{classvita_1_1Transform}{Transform}} using axis-\/angled rotation. Use degrees only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotation} & Axis-\/angled rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Transform_ab251fee3dd344f5444ccebb536983a5f}\label{classvita_1_1Transform_ab251fee3dd344f5444ccebb536983a5f}} 
+\index{vita::Transform@{vita::Transform}!SetAsChildrenOf@{SetAsChildrenOf}}
+\index{SetAsChildrenOf@{SetAsChildrenOf}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{SetAsChildrenOf()}{SetAsChildrenOf()}}
+{\footnotesize\ttfamily void vita\+::\+Transform\+::\+Set\+As\+Children\+Of (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Entity}{Entity}} $>$}]{\+\_\+parent }\end{DoxyParamCaption})}
+
+
+
+Sets this \mbox{\hyperlink{classvita_1_1Transform}{Transform}} as a child of another \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+parent} & The parent \mbox{\hyperlink{classvita_1_1Entity}{Entity}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Transform_a1740e61f38e9a331009e6925e058d2eb}\label{classvita_1_1Transform_a1740e61f38e9a331009e6925e058d2eb}} 
+\index{vita::Transform@{vita::Transform}!SetLocalPosition@{SetLocalPosition}}
+\index{SetLocalPosition@{SetLocalPosition}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{SetLocalPosition()}{SetLocalPosition()}}
+{\footnotesize\ttfamily void vita\+::\+Transform\+::\+Set\+Local\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Sets the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & A position vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Transform_a46bb88bc40bc3922e5f344f8621880e7}\label{classvita_1_1Transform_a46bb88bc40bc3922e5f344f8621880e7}} 
+\index{vita::Transform@{vita::Transform}!SetLocalRotation@{SetLocalRotation}}
+\index{SetLocalRotation@{SetLocalRotation}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{SetLocalRotation()}{SetLocalRotation()}}
+{\footnotesize\ttfamily void vita\+::\+Transform\+::\+Set\+Local\+Rotation (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rotation }\end{DoxyParamCaption})}
+
+
+
+Sets the local rotation of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. Use degrees and axis-\/angled rotation only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotation} & Axis-\/angled rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1Transform_aa958caad4c9b2a84e087be25d3ac76b2}\label{classvita_1_1Transform_aa958caad4c9b2a84e087be25d3ac76b2}} 
+\index{vita::Transform@{vita::Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!vita::Transform@{vita::Transform}}
+\doxysubsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily void vita\+::\+Transform\+::\+Translate (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+translation }\end{DoxyParamCaption})}
+
+
+
+Translates the local position of this \mbox{\hyperlink{classvita_1_1Transform}{Transform}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+translation} & Translation vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Transform_8h}{Transform.\+h}}\item 
+src/engine/\mbox{\hyperlink{Transform_8cpp}{Transform.\+cpp}}\end{DoxyCompactItemize}

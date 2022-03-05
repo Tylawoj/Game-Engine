@@ -1,0 +1,57 @@
+\hypertarget{classvita_1_1Environment}{}\doxysection{vita\+::Environment Class Reference}
+\label{classvita_1_1Environment}\index{vita::Environment@{vita::Environment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classvita_1_1Environment_ae6b261bc454c9147dae0de8413a6f101}{Get\+Delta\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns a delta time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Environment_a125333c6e286ed0ec66b82ec48635907}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Environment_a9da24a647792c899433327b2ab3767e4}{On\+Tick}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the delta time with each tick. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Environment_ae6b261bc454c9147dae0de8413a6f101}\label{classvita_1_1Environment_ae6b261bc454c9147dae0de8413a6f101}} 
+\index{vita::Environment@{vita::Environment}!GetDeltaTime@{GetDeltaTime}}
+\index{GetDeltaTime@{GetDeltaTime}!vita::Environment@{vita::Environment}}
+\doxysubsubsection{\texorpdfstring{GetDeltaTime()}{GetDeltaTime()}}
+{\footnotesize\ttfamily float vita\+::\+Environment\+::\+Get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a delta time. 
+
+\begin{DoxyReturn}{Returns}
+A delta time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Environment_a125333c6e286ed0ec66b82ec48635907}\label{classvita_1_1Environment_a125333c6e286ed0ec66b82ec48635907}} 
+\index{vita::Environment@{vita::Environment}!Init@{Init}}
+\index{Init@{Init}!vita::Environment@{vita::Environment}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void vita\+::\+Environment\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the member variables. 
+
+$<$ Set the previous tick to current time.
+
+$<$ Initialize the delta time to 0.\mbox{\Hypertarget{classvita_1_1Environment_a9da24a647792c899433327b2ab3767e4}\label{classvita_1_1Environment_a9da24a647792c899433327b2ab3767e4}} 
+\index{vita::Environment@{vita::Environment}!OnTick@{OnTick}}
+\index{OnTick@{OnTick}!vita::Environment@{vita::Environment}}
+\doxysubsubsection{\texorpdfstring{OnTick()}{OnTick()}}
+{\footnotesize\ttfamily void vita\+::\+Environment\+::\+On\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the delta time with each tick. 
+
+Calculate the delta time from the difference between now and the previous tick.
+
+Store the current tick.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Environment_8h}{Environment.\+h}}\item 
+src/engine/\mbox{\hyperlink{Environment_8cpp}{Environment.\+cpp}}\end{DoxyCompactItemize}

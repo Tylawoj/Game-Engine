@@ -1,0 +1,107 @@
+\hypertarget{classvita_1_1Screen}{}\doxysection{vita\+::Screen Class Reference}
+\label{classvita_1_1Screen}\index{vita::Screen@{vita::Screen}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1Screen_a2a319118ec36f0dd5b3181c25a48b347}{Screen}} (std\+::string \+\_\+title, int \+\_\+width, int \+\_\+height, int \+\_\+samples)
+\begin{DoxyCompactList}\small\item\em Creates a S\+D\+L\+\_\+window with a G\+L\+Context for rendering to the window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvita_1_1Screen_a6cc0b45be49f6411b854c79b9a14e5cd}{$\sim$\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the window and G\+L\+Context, and quits S\+DL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Screen_a42287db974116a128a5017250fca11f3}{Clear\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen for rendering. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvita_1_1Screen_a0d75b90380a3064aea51112929c0eac3}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returns the height of the window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvita_1_1Screen_a4696c7c5c635981df6ceba5826c6b22c}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returns the width of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvita_1_1Screen_a4c3a41e7fcfda02b4b6b44144e547422}\label{classvita_1_1Screen_a4c3a41e7fcfda02b4b6b44144e547422}} 
+void \mbox{\hyperlink{classvita_1_1Screen_a4c3a41e7fcfda02b4b6b44144e547422}{G\+L\+Swap\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the S\+DL window with the Open\+GL render. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1Screen_a2a319118ec36f0dd5b3181c25a48b347}\label{classvita_1_1Screen_a2a319118ec36f0dd5b3181c25a48b347}} 
+\index{vita::Screen@{vita::Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!vita::Screen@{vita::Screen}}
+\doxysubsubsection{\texorpdfstring{Screen()}{Screen()}}
+{\footnotesize\ttfamily vita\+::\+Screen\+::\+Screen (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+title,  }\item[{int}]{\+\_\+width,  }\item[{int}]{\+\_\+height,  }\item[{int}]{\+\_\+samples }\end{DoxyParamCaption})}
+
+
+
+Creates a S\+D\+L\+\_\+window with a G\+L\+Context for rendering to the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & The title of the window. \\
+\hline
+{\em \+\_\+width} & The width of the window. \\
+\hline
+{\em \+\_\+height} & The height of the window. \\
+\hline
+{\em \+\_\+samples} & The amount of samples used for M\+S\+AA. \\
+\hline
+\end{DoxyParams}
+Try to initialize S\+DL.
+
+Ensure the amount of samples for M\+S\+AA is above 0.
+
+Ensure the amount of samples for M\+S\+AA is not above 8.
+
+If there is more than one sample set, enable M\+S\+AA.
+
+Create a S\+DL window with the specified title, width and height (M\+S\+AA as well).
+
+Create an Open\+GL context using S\+DL\textquotesingle{}s window.\mbox{\Hypertarget{classvita_1_1Screen_a6cc0b45be49f6411b854c79b9a14e5cd}\label{classvita_1_1Screen_a6cc0b45be49f6411b854c79b9a14e5cd}} 
+\index{vita::Screen@{vita::Screen}!````~Screen@{$\sim$Screen}}
+\index{````~Screen@{$\sim$Screen}!vita::Screen@{vita::Screen}}
+\doxysubsubsection{\texorpdfstring{$\sim$Screen()}{~Screen()}}
+{\footnotesize\ttfamily vita\+::\+Screen\+::$\sim$\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the window and G\+L\+Context, and quits S\+DL. 
+
+Delete the Open\+GL\textquotesingle{}s context and S\+DL window.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Screen_a42287db974116a128a5017250fca11f3}\label{classvita_1_1Screen_a42287db974116a128a5017250fca11f3}} 
+\index{vita::Screen@{vita::Screen}!ClearScreen@{ClearScreen}}
+\index{ClearScreen@{ClearScreen}!vita::Screen@{vita::Screen}}
+\doxysubsubsection{\texorpdfstring{ClearScreen()}{ClearScreen()}}
+{\footnotesize\ttfamily void vita\+::\+Screen\+::\+Clear\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the screen for rendering. 
+
+Clear the window with a black colour and clear the depth and colour buffer.\mbox{\Hypertarget{classvita_1_1Screen_a0d75b90380a3064aea51112929c0eac3}\label{classvita_1_1Screen_a0d75b90380a3064aea51112929c0eac3}} 
+\index{vita::Screen@{vita::Screen}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!vita::Screen@{vita::Screen}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int vita\+::\+Screen\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the height of the window. 
+
+\begin{DoxyReturn}{Returns}
+The height of the window. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Screen_a4696c7c5c635981df6ceba5826c6b22c}\label{classvita_1_1Screen_a4696c7c5c635981df6ceba5826c6b22c}} 
+\index{vita::Screen@{vita::Screen}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!vita::Screen@{vita::Screen}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int vita\+::\+Screen\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the width of the window. 
+
+\begin{DoxyReturn}{Returns}
+The width of the window. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Screen_8h}{Screen.\+h}}\item 
+src/engine/\mbox{\hyperlink{Screen_8cpp}{Screen.\+cpp}}\end{DoxyCompactItemize}

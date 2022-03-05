@@ -1,0 +1,62 @@
+\hypertarget{classvita_1_1Mesh}{}\doxysection{vita\+::Mesh Class Reference}
+\label{classvita_1_1Mesh}\index{vita::Mesh@{vita::Mesh}}
+Inheritance diagram for vita\+::Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1Mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Mesh $>$ \mbox{\hyperlink{classvita_1_1Mesh_a2e68ea314f6453bf26e26336844d0543}{Get\+Rend\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}}, used in rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1Mesh_aca4214717b2f012c0f5ac1f6cf1fb206}{On\+Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} from an O\+BJ file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1Mesh_a2e68ea314f6453bf26e26336844d0543}\label{classvita_1_1Mesh_a2e68ea314f6453bf26e26336844d0543}} 
+\index{vita::Mesh@{vita::Mesh}!GetRendMesh@{GetRendMesh}}
+\index{GetRendMesh@{GetRendMesh}!vita::Mesh@{vita::Mesh}}
+\doxysubsubsection{\texorpdfstring{GetRendMesh()}{GetRendMesh()}}
+{\footnotesize\ttfamily std\+::sr1\+::shared\+\_\+ptr$<$ rend\+::\+Mesh $>$ vita\+::\+Mesh\+::\+Get\+Rend\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}}, used in rendering. 
+
+\begin{DoxyReturn}{Returns}
+The rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1Mesh_aca4214717b2f012c0f5ac1f6cf1fb206}\label{classvita_1_1Mesh_aca4214717b2f012c0f5ac1f6cf1fb206}} 
+\index{vita::Mesh@{vita::Mesh}!OnLoad@{OnLoad}}
+\index{OnLoad@{OnLoad}!vita::Mesh@{vita::Mesh}}
+\doxysubsubsection{\texorpdfstring{OnLoad()}{OnLoad()}}
+{\footnotesize\ttfamily void vita\+::\+Mesh\+::\+On\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}} from an O\+BJ file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to the O\+BJ file. \\
+\hline
+\end{DoxyParams}
+Creates a rend\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Mesh}{Mesh}}.
+
+Open the file from the specified path.
+
+Store the file\textquotesingle{}s content into a string.
+
+Parse the string with the mesh to rend.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Resource_affdeed2b755b588e22d39222a578ca3b}{vita\+::\+Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{Mesh_8h}{Mesh.\+h}}\item 
+src/engine/\mbox{\hyperlink{Mesh_8cpp}{Mesh.\+cpp}}\end{DoxyCompactItemize}

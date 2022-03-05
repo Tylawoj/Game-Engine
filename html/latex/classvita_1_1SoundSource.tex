@@ -1,0 +1,208 @@
+\hypertarget{classvita_1_1SoundSource}{}\doxysection{vita\+::Sound\+Source Class Reference}
+\label{classvita_1_1SoundSource}\index{vita::SoundSource@{vita::SoundSource}}
+Inheritance diagram for vita\+::Sound\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvita_1_1SoundSource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvita_1_1SoundSource_a91032a8c40f426c7d381d4ed008c347e}{Sound\+Source}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Sound}{Sound}} $>$ \+\_\+sound, bool \+\_\+play\+On\+Init, bool \+\_\+remove\+After\+Play)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classvita_1_1SoundSource}{Sound\+Source}} with a set sound to play, and whether it should play when initializes, as well as removed after playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvita_1_1SoundSource_a2ef90e1f78d4360e81fcff749d090f03}{$\sim$\+Sound\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the Open\+AL source. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1SoundSource_a8e87a4891714577c0891d77d676805f3}{Get\+Auto\+Remove}} ()
+\begin{DoxyCompactList}\small\item\em Returns if the sound source will destroy after playing. \end{DoxyCompactList}\item 
+A\+Luint \mbox{\hyperlink{classvita_1_1SoundSource_a61564c19ac42d943dcdc313f6f369537}{Get\+Source\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Open\+AL sound source ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvita_1_1SoundSource_a52bd33ed430fea867aafd9db0e6e46a0}{Is\+Playing}} ()
+\begin{DoxyCompactList}\small\item\em Returns if the sound source is playing now. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_abe9f2a3fc9a072bfdfb8c8c798c8ee1c}{On\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes member variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_aca79d215a197715799432383cfa528b1}{On\+Tick}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the sound source is set to play and if yes, plays the sound. If the sound source already played once, checks for removal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_aff5fe0e13c6e995f98cc0d2572eeaf67}{Set\+Auto\+Remove}} (bool \+\_\+auto\+Remove)
+\begin{DoxyCompactList}\small\item\em Sets whether the sound source should destroy after playing once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_a4f1162a23f80940b593b7d064fb834e5}{Set\+Sound}} (std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Sound}{Sound}} $>$ \+\_\+sound)
+\begin{DoxyCompactList}\small\item\em Sets a sound to be played by the sound source. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_a4aa5e469038a18f0d8ef58ca2b5d6ac3}{Set\+To\+Play}} (bool \+\_\+play\+Status)
+\begin{DoxyCompactList}\small\item\em Sets whether the sound source should play on next tick. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvita_1_1SoundSource_ae5ed143e816edc0262a073a19f324429}{Stop\+Playing}} ()
+\begin{DoxyCompactList}\small\item\em Stops playing the sound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a91032a8c40f426c7d381d4ed008c347e}\label{classvita_1_1SoundSource_a91032a8c40f426c7d381d4ed008c347e}} 
+\index{vita::SoundSource@{vita::SoundSource}!SoundSource@{SoundSource}}
+\index{SoundSource@{SoundSource}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{SoundSource()}{SoundSource()}}
+{\footnotesize\ttfamily vita\+::\+Sound\+Source\+::\+Sound\+Source (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Sound}{Sound}} $>$}]{\+\_\+sound,  }\item[{bool}]{\+\_\+play\+On\+Init,  }\item[{bool}]{\+\_\+remove\+After\+Play }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classvita_1_1SoundSource}{Sound\+Source}} with a set sound to play, and whether it should play when initializes, as well as removed after playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+sound} & The sound to store. \\
+\hline
+{\em \+\_\+play\+On\+Init} & Whether the sound should play on initialization. \\
+\hline
+{\em \+\_\+remove\+After\+Play} & Whether the soundsource should be destroyed after playing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a2ef90e1f78d4360e81fcff749d090f03}\label{classvita_1_1SoundSource_a2ef90e1f78d4360e81fcff749d090f03}} 
+\index{vita::SoundSource@{vita::SoundSource}!````~SoundSource@{$\sim$SoundSource}}
+\index{````~SoundSource@{$\sim$SoundSource}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{$\sim$SoundSource()}{~SoundSource()}}
+{\footnotesize\ttfamily vita\+::\+Sound\+Source\+::$\sim$\+Sound\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the Open\+AL source. 
+
+Delete the source ID.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a8e87a4891714577c0891d77d676805f3}\label{classvita_1_1SoundSource_a8e87a4891714577c0891d77d676805f3}} 
+\index{vita::SoundSource@{vita::SoundSource}!GetAutoRemove@{GetAutoRemove}}
+\index{GetAutoRemove@{GetAutoRemove}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{GetAutoRemove()}{GetAutoRemove()}}
+{\footnotesize\ttfamily bool vita\+::\+Sound\+Source\+::\+Get\+Auto\+Remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns if the sound source will destroy after playing. 
+
+\begin{DoxyReturn}{Returns}
+Whether the sound source will destroy after playing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a61564c19ac42d943dcdc313f6f369537}\label{classvita_1_1SoundSource_a61564c19ac42d943dcdc313f6f369537}} 
+\index{vita::SoundSource@{vita::SoundSource}!GetSourceId@{GetSourceId}}
+\index{GetSourceId@{GetSourceId}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{GetSourceId()}{GetSourceId()}}
+{\footnotesize\ttfamily A\+Luint vita\+::\+Sound\+Source\+::\+Get\+Source\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Open\+AL sound source ID. 
+
+\begin{DoxyReturn}{Returns}
+The Open\+AL sound source ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a52bd33ed430fea867aafd9db0e6e46a0}\label{classvita_1_1SoundSource_a52bd33ed430fea867aafd9db0e6e46a0}} 
+\index{vita::SoundSource@{vita::SoundSource}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily bool vita\+::\+Sound\+Source\+::\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns if the sound source is playing now. 
+
+\begin{DoxyReturn}{Returns}
+Whether the sound source is playing now. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvita_1_1SoundSource_abe9f2a3fc9a072bfdfb8c8c798c8ee1c}\label{classvita_1_1SoundSource_abe9f2a3fc9a072bfdfb8c8c798c8ee1c}} 
+\index{vita::SoundSource@{vita::SoundSource}!OnInit@{OnInit}}
+\index{OnInit@{OnInit}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{OnInit()}{OnInit()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+On\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes member variables. 
+
+Generate a source ID.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Component_a1a33afc68f0cd9e3935473ef6a8ac6f5}{vita\+::\+Component}}.
+
+\mbox{\Hypertarget{classvita_1_1SoundSource_aca79d215a197715799432383cfa528b1}\label{classvita_1_1SoundSource_aca79d215a197715799432383cfa528b1}} 
+\index{vita::SoundSource@{vita::SoundSource}!OnTick@{OnTick}}
+\index{OnTick@{OnTick}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{OnTick()}{OnTick()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+On\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the sound source is set to play and if yes, plays the sound. If the sound source already played once, checks for removal. 
+
+Check if the sound is due to play.
+
+Sets the sound position to the storing \mbox{\hyperlink{classvita_1_1Entity}{Entity}}\textquotesingle{}s \mbox{\hyperlink{classvita_1_1Transform}{Transform}}.
+
+Sets the listener\textquotesingle{}s position to the camera position.
+
+Try to play the sound at this sound source.
+
+Set as no longer due to play.
+
+Get the state of the sound source.
+
+Check whether the sound source has stopped playing, and if yes, check whether it is supposed to be destroyed after playing.
+
+Reimplemented from \mbox{\hyperlink{classvita_1_1Component_a1e8b8bb91485bbb037acb58ffe47af1c}{vita\+::\+Component}}.
+
+\mbox{\Hypertarget{classvita_1_1SoundSource_aff5fe0e13c6e995f98cc0d2572eeaf67}\label{classvita_1_1SoundSource_aff5fe0e13c6e995f98cc0d2572eeaf67}} 
+\index{vita::SoundSource@{vita::SoundSource}!SetAutoRemove@{SetAutoRemove}}
+\index{SetAutoRemove@{SetAutoRemove}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{SetAutoRemove()}{SetAutoRemove()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+Set\+Auto\+Remove (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+auto\+Remove }\end{DoxyParamCaption})}
+
+
+
+Sets whether the sound source should destroy after playing once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+auto\+Remove} & Whether the soundsource should be destroyed after playing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a4f1162a23f80940b593b7d064fb834e5}\label{classvita_1_1SoundSource_a4f1162a23f80940b593b7d064fb834e5}} 
+\index{vita::SoundSource@{vita::SoundSource}!SetSound@{SetSound}}
+\index{SetSound@{SetSound}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{SetSound()}{SetSound()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+Set\+Sound (\begin{DoxyParamCaption}\item[{std\+::sr1\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvita_1_1Sound}{Sound}} $>$}]{\+\_\+sound }\end{DoxyParamCaption})}
+
+
+
+Sets a sound to be played by the sound source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+sound} & The sound to store. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1SoundSource_a4aa5e469038a18f0d8ef58ca2b5d6ac3}\label{classvita_1_1SoundSource_a4aa5e469038a18f0d8ef58ca2b5d6ac3}} 
+\index{vita::SoundSource@{vita::SoundSource}!SetToPlay@{SetToPlay}}
+\index{SetToPlay@{SetToPlay}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{SetToPlay()}{SetToPlay()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+Set\+To\+Play (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+play\+Status }\end{DoxyParamCaption})}
+
+
+
+Sets whether the sound source should play on next tick. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+play\+Status} & Whether the sound source should start playing on next tick. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvita_1_1SoundSource_ae5ed143e816edc0262a073a19f324429}\label{classvita_1_1SoundSource_ae5ed143e816edc0262a073a19f324429}} 
+\index{vita::SoundSource@{vita::SoundSource}!StopPlaying@{StopPlaying}}
+\index{StopPlaying@{StopPlaying}!vita::SoundSource@{vita::SoundSource}}
+\doxysubsubsection{\texorpdfstring{StopPlaying()}{StopPlaying()}}
+{\footnotesize\ttfamily void vita\+::\+Sound\+Source\+::\+Stop\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops playing the sound. 
+
+Stops the playing sound source.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/\mbox{\hyperlink{SoundSource_8h}{Sound\+Source.\+h}}\item 
+src/engine/\mbox{\hyperlink{SoundSource_8cpp}{Sound\+Source.\+cpp}}\end{DoxyCompactItemize}
