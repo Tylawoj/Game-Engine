@@ -8,7 +8,9 @@ This engine uses the following libraries:
 * STB for .ogg sound and image decoding,
 * SDL2 for displaying a window.
 
+## Demo
+The `/linux64/` folder contains a built Linux executable with a demo game, with a README as to how to operate the inputs.
+
 ## Documentation
 Further information about the project can be found in the attached report as the `/doc/Report.pdf` file.
 This project also contains Doxygen documentation in the `/doc/` directory.
-
