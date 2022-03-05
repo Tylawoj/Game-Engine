@@ -1,5 +1,5 @@
 # VitaEngine
-A C++ Game Engine that supports 3D models, positional sound, input, extensive exception checking, AABB collisions, cameras and (__unfinished__) GUI.
+A C++ Game Engine which follows the Entity Component System architecture. It supports 3D models, positional sound, input, extensive exception checking, AABB collisions, cameras and (__unfinished__) GUI.
 
 This engine uses the following libraries:
 * rend, a wrapper for OpenGL rendering,
